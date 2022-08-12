@@ -1,0 +1,25 @@
+uuid: a0d60886-6f05-45e1-93e5-dce690936a82
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.neighborhoods
+  module:
+    - system
+  theme:
+    - sub_boot
+id: neighborhoods
+theme: sub_boot
+region: footer_menus
+weight: -35
+provider: null
+plugin: 'system_menu_block:neighborhoods'
+settings:
+  id: 'system_menu_block:neighborhoods'
+  label: Neighborhoods
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

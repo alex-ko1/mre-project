@@ -1,0 +1,11 @@
+uuid: 5670d928-4a2a-4b93-9196-210ec1972a63
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_unit.unit_bundle.default
+id: bat_unit.default
+target_entity_type_id: bat_unit
+target_bundle: default
+default_langcode: current_interface
+language_alterable: false

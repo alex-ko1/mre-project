@@ -1,0 +1,22 @@
+uuid: 189f4a5c-eb4d-497a-9e54-9eeb45722b6d
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.career_gallery
+id: media.career_gallery.status
+field_name: status
+entity_type: media
+bundle: career_gallery
+label: Опубліковано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

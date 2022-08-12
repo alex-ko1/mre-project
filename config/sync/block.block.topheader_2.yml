@@ -1,0 +1,25 @@
+uuid: 6c2589f1-80c7-4703-bfc2-8cf59db214df
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:top_header:3870e8d9-12c6-462b-995f-298d4610fcef'
+  module:
+    - block_content
+  theme:
+    - sub_boot
+id: topheader_2
+theme: sub_boot
+region: header
+weight: -24
+provider: null
+plugin: 'block_content:3870e8d9-12c6-462b-995f-298d4610fcef'
+settings:
+  id: 'block_content:3870e8d9-12c6-462b-995f-298d4610fcef'
+  label: 'Top Header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

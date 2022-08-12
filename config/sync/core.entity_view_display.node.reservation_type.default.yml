@@ -1,0 +1,63 @@
+uuid: f2e3e9f4-81cc-4b56-b422-bb633a32bb4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reservation_type.body
+    - field.field.node.reservation_type.field_reserv_item
+    - field.field.node.reservation_type.field_user_email
+    - field.field.node.reservation_type.field_user_email2
+    - field.field.node.reservation_type.field_user_name
+    - node.type.reservation_type
+  module:
+    - options
+    - text
+    - user
+id: node.reservation_type.default
+targetEntityType: node
+bundle: reservation_type
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_reserv_item:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_user_email:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_user_email2:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_user_name:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

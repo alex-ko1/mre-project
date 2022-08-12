@@ -1,0 +1,18 @@
+uuid: 4cf5e24c-cb5b-45de-b08a-f8c6101d9915
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.operation_with_property
+id: taxonomy_term.operation_with_property.name
+field_name: name
+entity_type: taxonomy_term
+bundle: operation_with_property
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

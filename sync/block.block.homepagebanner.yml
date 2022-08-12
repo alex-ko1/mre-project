@@ -1,0 +1,38 @@
+uuid: f3a3acba-4997-418c-a327-2468821dd4f9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f5582d4-3988-404b-bf17-32d01b02ecb0'
+  module:
+    - block_content
+    - language
+    - system
+  theme:
+    - sub_boot
+id: homepagebanner
+theme: sub_boot
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:3f5582d4-3988-404b-bf17-32d01b02ecb0'
+settings:
+  id: 'block_content:3f5582d4-3988-404b-bf17-32d01b02ecb0'
+  label: 'Homepage banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/neighborhoods"

@@ -1,0 +1,30 @@
+uuid: 303c9127-8139-41b2-a3f2-891357f802c0
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:09362a41-5d4c-4bb1-a257-152590200422'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: vacanciessidebar
+theme: sub_boot
+region: instagram
+weight: 0
+provider: null
+plugin: 'block_content:09362a41-5d4c-4bb1-a257-152590200422'
+settings:
+  id: 'block_content:09362a41-5d4c-4bb1-a257-152590200422'
+  label: 'Vacancies - sidebar'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /company/career

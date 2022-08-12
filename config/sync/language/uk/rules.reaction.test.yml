@@ -1,0 +1,7 @@
+expression:
+  actions:
+    actions:
+      1:
+        context_values:
+          subject: 'Бронювання успішно створено! Відвідайте свій профіль MRE для отримання детальної інформації.'
+          message: 'Ваш профіль MRE: https://mreproject.dev.drudesk.com/uk/user/login. Для скасування бронювання зв''яжіться з адміністратором.'

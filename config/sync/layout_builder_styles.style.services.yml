@@ -1,0 +1,12 @@
+uuid: fde6f244-4a82-45b8-8c9d-ca7caaaa1565
+langcode: en
+status: true
+dependencies: {  }
+id: services
+label: Services
+classes: homepage__services
+type: component
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

@@ -1,0 +1,28 @@
+uuid: fa276fb5-ded0-4287-a8db-8c0857accc7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header
+    - field.storage.block_content.field_address
+  module:
+    - link
+id: block_content.top_header.field_address
+field_name: field_address
+entity_type: block_content
+bundle: top_header
+label: Address
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://goo.gl/maps/8p93Cs2FUiSG9Qki7'
+    title: '6 Avenue Jean Mermoz, 06230 Saint-Jean-Cap-Ferrat, France'
+    options: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

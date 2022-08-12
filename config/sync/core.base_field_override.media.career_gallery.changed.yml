@@ -1,0 +1,18 @@
+uuid: 314ed1bc-cea1-40b0-90d0-c3b0168f448a
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.career_gallery
+id: media.career_gallery.changed
+field_name: changed
+entity_type: media
+bundle: career_gallery
+label: Змінено
+description: 'Час останнього редагування медіа-об''єкта.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

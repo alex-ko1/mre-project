@@ -1,0 +1,25 @@
+uuid: bf522498-3ac8-4c57-af8a-0cb579c29ab6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.services
+  module:
+    - system
+  theme:
+    - sub_boot
+id: services_2
+theme: sub_boot
+region: footer_menus
+weight: -33
+provider: null
+plugin: 'system_menu_block:services'
+settings:
+  id: 'system_menu_block:services'
+  label: Services
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

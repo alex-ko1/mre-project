@@ -1,0 +1,24 @@
+uuid: e8f87356-ebbb-44e8-9280-219efb900eb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_text
+    - node.type.property_item
+  module:
+    - text
+id: node.property_item.field_price_text
+field_name: field_price_text
+entity_type: node
+bundle: property_item
+label: 'price text'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'No price'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

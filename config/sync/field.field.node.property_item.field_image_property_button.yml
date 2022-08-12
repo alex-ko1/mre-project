@@ -1,0 +1,29 @@
+uuid: 98ba9cb8-48c7-4721-92b3-60277472e6d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_property_button
+    - media.type.image
+    - node.type.property_item
+id: node.property_item.field_image_property_button
+field_name: field_image_property_button
+entity_type: node
+bundle: property_item
+label: 'Image property button'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 5c9f824f-5a1f-437a-9e0e-6482d3eb9020
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reservation_type
+id: node.reservation_type.metatag
+field_name: metatag
+entity_type: node
+bundle: reservation_type
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

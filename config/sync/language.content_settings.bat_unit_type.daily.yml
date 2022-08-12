@@ -1,0 +1,11 @@
+uuid: d574c583-92ad-4039-ae52-c781bbfb28e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_unit.type_bundle.daily
+id: bat_unit_type.daily
+target_entity_type_id: bat_unit_type
+target_bundle: daily
+default_langcode: site_default
+language_alterable: false

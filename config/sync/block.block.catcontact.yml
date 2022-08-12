@@ -1,0 +1,34 @@
+uuid: d6e5888a-8ba0-47d2-9aa0-706304d8f353
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:eeba8418-b383-4d38-a4de-10ef53bef7d6'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - sub_boot
+third_party_settings:
+  block_class:
+    classes: 'wow slideInRight'
+id: catcontact
+theme: sub_boot
+region: content
+weight: -32
+provider: null
+plugin: 'block_content:eeba8418-b383-4d38-a4de-10ef53bef7d6'
+settings:
+  id: 'block_content:eeba8418-b383-4d38-a4de-10ef53bef7d6'
+  label: 'CAT contact'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /company/career

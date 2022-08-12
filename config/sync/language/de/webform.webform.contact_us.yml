@@ -1,0 +1,25 @@
+title: 'Kontaktiere uns'
+elements: |
+  name:
+    '#required_error': 'Bitte geben Sie Ihren Namen ein'
+  email_addres:
+    '#title': 'E-Mail Addresse'
+    '#placeholder': 'E-Mail Addresse'
+    '#required_error': 'Bitte geben Sie ihre E-Mail Adresse ein'
+  phone_number:
+    '#title': Telefonnummer
+    '#required_error': 'Bitte gib deine Telefonnummer ein'
+  actions:
+    '#submit__label': Senden
+  what_you_are_searching_for:
+    '#title': 'Was suchen Sie'
+    '#placeholder': 'Sagen Sie uns, wonach Sie suchen, und wir werden uns in Kürze mit Ihnen in Verbindung setzen.'
+    '#required_error': 'Bitte teilen Sie uns mit, wenn Sie Bedenken haben'
+settings:
+  confirmation_title: 'Du hast es!'
+  confirmation_message: 'Wir haben Ihre Anfrage erhalten und werden uns innerhalb von 48 Stunden bei Ihnen melden!'
+handlers:
+  email_v2:
+    settings:
+      body: "<strong>From:</strong>&nbsp;[site:mail]<br />\r\nVielen Dank f&uuml;r Ihre E-Mail! Wir werden uns bald bei Ihnen melden! :)"
+      subject: 'Marks Real Estate'

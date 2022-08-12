@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Читати далі'
+        field_paragraph:
+          label: 'Особливості місцевості'

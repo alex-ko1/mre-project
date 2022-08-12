@@ -1,0 +1,18 @@
+uuid: 9cd0d1f7-8991-4c32-a6de-6a92f6b97656
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.career_photoes
+id: taxonomy_term.career_photoes.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: career_photoes
+label: Змінено
+description: 'Час останнього редагування терміна.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

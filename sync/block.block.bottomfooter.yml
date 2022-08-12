@@ -1,0 +1,25 @@
+uuid: bf6b67c1-66de-469c-bb68-04f7e491e93c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1c96e357-edd2-4ef0-89f0-2c33ecf9dc5c'
+  module:
+    - block_content
+  theme:
+    - sub_boot
+id: bottomfooter
+theme: sub_boot
+region: footer
+weight: -17
+provider: null
+plugin: 'block_content:1c96e357-edd2-4ef0-89f0-2c33ecf9dc5c'
+settings:
+  id: 'block_content:1c96e357-edd2-4ef0-89f0-2c33ecf9dc5c'
+  label: 'Bottom footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

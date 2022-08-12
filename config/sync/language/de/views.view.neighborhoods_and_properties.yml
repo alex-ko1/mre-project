@@ -1,0 +1,6 @@
+label: 'Nachbarschaften und Eigenschaften'
+display:
+  default:
+    display_options:
+      title: 'Nachbarschaften und Eigenschaften'
+      use_more_text: Weiterlesen

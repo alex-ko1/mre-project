@@ -1,0 +1,16 @@
+elements: |
+  sign_up_to_our_newsletter:
+    '#title': 'Registriere dich für unseren Newsletter'
+    '#placeholder': 'Geben sie ihre E-Mail Adresse ein'
+    '#required_error': 'Dieses Feld ist erforderlich'
+  i_agree_that_marks_real_estate_are_allowed_to_use_the_informatio:
+    '#title': 'Ich stimme zu, dass Marks Real Estate die in diesem Formular angegebenen Informationen verwenden darf, um mir Newsletter zuzusenden.'
+    '#required_error': 'Dieses Feld ist erforderlich'
+handlers:
+  email_2:
+    settings:
+      body: "<strong>From:</strong>&nbsp;[site:mail]<br />\r\nVielen Dank f&uuml;r Ihre E-Mail! Wir werden uns bald bei Ihnen melden! :)"
+      subject: 'Marks Real Estate'
+settings:
+  confirmation_title: 'Du hast es!'
+  confirmation_message: 'Sie haben sich erfolgreich f&uuml;r unseren Newsletter angemeldet!'

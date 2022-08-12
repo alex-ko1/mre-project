@@ -1,0 +1,102 @@
+uuid: efa10c99-6639-41ca-bb03-1835ab44716e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.neighbourhoods.body
+    - field.field.node.neighbourhoods.field_availability_daily
+    - field.field.node.neighbourhoods.field_neighbourhood_image
+    - field.field.node.neighbourhoods.field_open_hours
+    - field.field.node.neighbourhoods.field_paragraph
+    - field.field.node.neighbourhoods.field_use_open_hours
+    - node.type.neighbourhoods
+  module:
+    - entity_reference_revisions
+    - office_hours
+    - photoswipe
+    - text
+    - user
+id: node.neighbourhoods.default
+targetEntityType: node
+bundle: neighbourhoods
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_availability_daily:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: daily_calendar
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_neighbourhood_image:
+    type: photoswipe_field_formatter
+    label: hidden
+    settings:
+      photoswipe_node_style_first: ''
+      photoswipe_node_style: ''
+      photoswipe_image_style: ''
+      photoswipe_reference_image_field: ''
+      photoswipe_caption: title
+      photoswipe_caption_custom: ''
+      photoswipe_view_mode: default
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_open_hours:
+    type: office_hours_table
+    label: above
+    settings:
+      day_format: long
+      time_format: G
+      compress: false
+      grouped: false
+      show_closed: all
+      closed_format: Closed
+      separator:
+        days: '<br />'
+        grouped_days: ' - '
+        day_hours: ': '
+        hours_hours: '-'
+        more_hours: ', '
+      current_status:
+        position: ''
+        open_text: 'Currently open!'
+        closed_text: 'Currently closed'
+      exceptions:
+        restrict_exceptions_to_num_days: 7
+        date_format: long
+        title: 'Exception hours'
+      timezone_field: ''
+      office_hours_first_day: ''
+      schema:
+        enabled: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  field_use_open_hours: true
+  langcode: true

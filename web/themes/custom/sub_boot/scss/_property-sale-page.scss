@@ -1,0 +1,29 @@
+.property-sale-page,
+.property-rent-page{
+    @include prebanner;
+    #block-salesbanner, #block-rentbanner{
+        @include banner;
+    }
+    h1.page-title {
+        display: none;
+    }
+    .region.region-content{
+        #block-sub-boot-content.block-system.block-system-main-block{
+            display: none;
+        }
+        #block-views-block-property-rent-block-1 .view-content .views-row,
+        #block-views-block-property-sale-block-1 .view-content .views-row{
+            margin-bottom: 0;
+        }
+        h2{
+            display: none;
+        }
+    }
+    nav {
+        ul.pagination {
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+}

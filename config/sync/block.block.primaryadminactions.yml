@@ -1,0 +1,36 @@
+uuid: 8a2fcbdc-30bd-4924-a7e0-8db220371469
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+    - user
+  theme:
+    - sub_boot
+third_party_settings:
+  block_class:
+    classes: anonymous-primary-admin-actions
+id: primaryadminactions
+theme: sub_boot
+region: content
+weight: -37
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/properties/rent/*\r\n/properties/orenda/*\r\n/properties/miete/*\r\n/properties/location/*"

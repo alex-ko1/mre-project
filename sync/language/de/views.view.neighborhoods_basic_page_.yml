@@ -1,0 +1,11 @@
+label: Nachbarschaften
+display:
+  default:
+    display_options:
+      title: Nachbarschaften
+      use_more_text: Weiterlesen
+      header:
+        area:
+          content:
+            value: "<p>Die berühmte französische Riviera, die zwischen den Alpen liegt.</p>\r\n"
+            format: basic_html

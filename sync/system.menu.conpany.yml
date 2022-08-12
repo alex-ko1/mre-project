@@ -1,0 +1,8 @@
+uuid: cc605330-0d63-4b8e-afc8-72e0f6e84e93
+langcode: en
+status: true
+dependencies: {  }
+id: conpany
+label: Conpany
+description: ''
+locked: false

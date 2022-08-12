@@ -1,0 +1,25 @@
+uuid: 27d05cd0-af80-42af-b44d-4e3b91769def
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sales
+  module:
+    - system
+  theme:
+    - sub_boot
+id: sales
+theme: sub_boot
+region: footer_menus
+weight: -19
+provider: null
+plugin: 'system_menu_block:sales'
+settings:
+  id: 'system_menu_block:sales'
+  label: Sales
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

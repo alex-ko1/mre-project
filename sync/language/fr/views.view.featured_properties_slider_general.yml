@@ -1,0 +1,11 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_beds:
+          label: Lits
+        field_baths:
+          label: Thermes
+        field_reference:
+          label: Référence
+      use_more_text: 'Plus d''info'

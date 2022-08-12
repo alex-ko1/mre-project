@@ -1,0 +1,18 @@
+uuid: 572999d9-793c-42e3-baf5-2d9a570bb3db
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.neighbourhood
+id: taxonomy_term.neighbourhood.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: neighbourhood
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

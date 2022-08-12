@@ -1,0 +1,21 @@
+uuid: 3087f93d-b213-4384-8a0c-0c607884925b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header
+    - field.storage.block_content.field_work_schedule
+  module:
+    - text
+id: block_content.top_header.field_work_schedule
+field_name: field_work_schedule
+entity_type: block_content
+bundle: top_header
+label: 'Work schedule'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

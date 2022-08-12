@@ -1,0 +1,68 @@
+uuid: 513e7bfa-b82f-4266-884a-85a51f102659
+langcode: en
+status: false
+dependencies: {  }
+id: reserv_rule
+label: 'Reserv rule'
+events:
+  -
+    event_name: 'rules_entity_insert:node--reservation_type'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 4e3c7fd7-1e88-4b9c-a530-bafeea8c8472
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: c1f5d145-0f79-47db-b6c5-5e7bafc5faa5
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 32705158-5754-4aa7-98ce-5cda0cd2e57b
+        weight: 0
+        condition_id: rules_entity_is_of_bundle
+        negate: false
+        context_values:
+          type: node
+          bundle: reservation_type
+        context_mapping:
+          entity: node
+        context_processors:
+          type:
+            rules_tokens: {  }
+          bundle:
+            rules_tokens: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 2b9c5c7b-b9d4-4d90-9db3-234e20aa436b
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 20f74134-f250-44b9-81ba-75ed6afa66a0
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{node.uid.entity.mail.value}}'
+          subject: 'Reservation is successfully created! Visit your MRE profile for details.'
+          message: 'Your MRE profile: https://mreproject.dev.drudesk.com/en/user/login. In order to cancel reservation contact the administrator.'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

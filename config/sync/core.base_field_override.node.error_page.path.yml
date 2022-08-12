@@ -1,0 +1,20 @@
+uuid: 55c27301-ad81-40e9-a163-62fc1b383937
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.error_page
+  module:
+    - path
+id: node.error_page.path
+field_name: path
+entity_type: node
+bundle: error_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

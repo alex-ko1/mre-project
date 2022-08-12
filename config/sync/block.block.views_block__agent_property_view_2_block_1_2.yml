@@ -1,0 +1,38 @@
+uuid: 764107a8-48c4-4f0a-bde4-626419a89c06
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.agent_property_view_2
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - sub_boot
+id: views_block__agent_property_view_2_block_1_2
+theme: sub_boot
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:agent_property_view_2-block_1'
+settings:
+  id: 'views_block:agent_property_view_2-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      property_item: property_item
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/properties/rent/*\r\n/properties/miete/*\r\n/properties/orenda/*\r\n/properties/location/*\r\n/properties/sale/*\r\n/properties/verkauf/*\r\n/properties/prodazh/*\r\n/properties/vente/*"

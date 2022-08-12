@@ -1,0 +1,30 @@
+uuid: 5079263e-340e-40a7-9830-8abd161342f3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c8e85d1e-f40a-42d1-a2bf-0dbdf9ec2807'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: registration
+theme: sub_boot
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:c8e85d1e-f40a-42d1-a2bf-0dbdf9ec2807'
+settings:
+  id: 'block_content:c8e85d1e-f40a-42d1-a2bf-0dbdf9ec2807'
+  label: Registration
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /user/login

@@ -1,0 +1,63 @@
+uuid: dcc6a9f9-75e2-4f37-943a-eda9605a1b88
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header
+    - field.field.block_content.top_header.body
+    - field.field.block_content.top_header.field_address
+    - field.field.block_content.top_header.field_email
+    - field.field.block_content.top_header.field_telephone
+    - field.field.block_content.top_header.field_work_schedule
+  module:
+    - link
+    - telephone
+    - text
+id: block_content.top_header.default
+targetEntityType: block_content
+bundle: top_header
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_address:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_email:
+    type: email_mailto
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_telephone:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_work_schedule:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true

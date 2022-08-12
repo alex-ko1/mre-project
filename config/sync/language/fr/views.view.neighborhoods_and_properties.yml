@@ -1,0 +1,6 @@
+label: 'Villes et propriétés'
+display:
+  default:
+    display_options:
+      title: 'Villes et propriétés'
+      use_more_text: 'Plus d''info'

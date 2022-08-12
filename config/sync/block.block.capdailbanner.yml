@@ -1,0 +1,30 @@
+uuid: e4a65407-2715-4e5d-8e6a-5aba21d3872b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:0611933d-5189-469d-b132-4412dba18109'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: capdailbanner
+theme: sub_boot
+region: banner
+weight: -35
+provider: null
+plugin: 'block_content:0611933d-5189-469d-b132-4412dba18109'
+settings:
+  id: 'block_content:0611933d-5189-469d-b132-4412dba18109'
+  label: 'Cap d''Ail Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/neighbourhoods/cap-dail\r\n/neighbourhoods/kap-day"

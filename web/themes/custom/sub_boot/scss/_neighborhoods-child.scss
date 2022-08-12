@@ -1,0 +1,45 @@
+.page-node-type-neighbourhoods {
+    main .row .region .block {
+        @include center;
+    }
+    main .row .region-content{
+        overflow: hidden;
+    }
+    @include prebanner;
+    #block-capdailbanner,
+    #block-ezebanner,
+    #block-nicebanner,
+    #block-capferratbanner,
+    #block-villefranchesurmer,
+    #block-roquebrunecapmartin,
+    #block-beaulieusurmer {
+        @include banner;
+    }
+    #block-pagetitle {
+        h1 {
+            display: none;
+        }
+    }
+    .node__content {
+        .field--name-field-paragraph {
+            width: 90%;
+            margin: 20px auto;
+            p {
+                padding-bottom: 15px;
+            }
+            @media (max-width:850px) {
+                text-align: justify;
+            }
+        }
+        .field--name-field-neighbourhood-image {
+            text-align: center;
+            margin-bottom: 40px;
+            img {
+                width: 80%;
+            }
+        }
+    }
+    .region-breadcrumb{
+        margin-top: 20px;
+    }
+}

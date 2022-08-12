@@ -1,0 +1,29 @@
+uuid: 9ff84816-1cda-4092-bb2e-8be6f7147f59
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_properties_slider_rent
+  module:
+    - system
+    - views
+  theme:
+    - sub_boot
+id: views_block__featured_properties_slider_rent_block_1
+theme: sub_boot
+region: content
+weight: -24
+provider: null
+plugin: 'views_block:featured_properties_slider_rent-block_1'
+settings:
+  id: 'views_block:featured_properties_slider_rent-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /services/renters

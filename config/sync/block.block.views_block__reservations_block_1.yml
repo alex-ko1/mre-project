@@ -1,0 +1,30 @@
+uuid: 764f8667-e880-4dc6-960c-78a25f0dad68
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.reservations
+  module:
+    - system
+    - views
+  theme:
+    - sub_boot
+id: views_block__reservations_block_1
+theme: sub_boot
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:reservations-block_1'
+settings:
+  id: 'views_block:reservations-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'

@@ -1,0 +1,29 @@
+uuid: a6f2a5ca-271e-4703-b386-0f0b84330393
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rate
+    - node.type.property_item
+  module:
+    - fivestar
+id: node.property_item.field_rate
+field_name: field_rate
+entity_type: node
+bundle: property_item
+label: 'Rate it!'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: viewing
+  enable_voting_target: false
+  target_bridge_field: ''
+  target_fivestar_field: ''
+field_type: fivestar

@@ -1,0 +1,17 @@
+uuid: bdb39a67-e8f5-4100-bfe4-00cbb379b3ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Error-page
+type: error_page
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

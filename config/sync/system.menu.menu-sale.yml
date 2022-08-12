@@ -1,0 +1,8 @@
+uuid: e371a3c6-4d10-44cf-bfa7-c5e644fc4d68
+langcode: en
+status: true
+dependencies: {  }
+id: menu-sale
+label: Sales
+description: ''
+locked: false

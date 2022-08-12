@@ -1,0 +1,30 @@
+uuid: 2038b2c0-ca0d-4207-bd07-fee7d2154fea
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:01b41a86-2f99-4ebf-a08d-1a81d469220e'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: salesbanner
+theme: sub_boot
+region: banner
+weight: -25
+provider: null
+plugin: 'block_content:01b41a86-2f99-4ebf-a08d-1a81d469220e'
+settings:
+  id: 'block_content:01b41a86-2f99-4ebf-a08d-1a81d469220e'
+  label: 'Sales Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /properties/sale

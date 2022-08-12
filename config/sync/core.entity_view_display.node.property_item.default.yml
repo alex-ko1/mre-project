@@ -1,0 +1,421 @@
+uuid: 66b4d0e6-36da-450f-a8f8-af08413b0934
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.property_item.body
+    - field.field.node.property_item.field_agent_property
+    - field.field.node.property_item.field_ameities
+    - field.field.node.property_item.field_availability_daily
+    - field.field.node.property_item.field_baths
+    - field.field.node.property_item.field_beds
+    - field.field.node.property_item.field_building_features
+    - field.field.node.property_item.field_coordinates
+    - field.field.node.property_item.field_image_property_button
+    - field.field.node.property_item.field_neighborhood_reference
+    - field.field.node.property_item.field_neighbourhood
+    - field.field.node.property_item.field_open_hours
+    - field.field.node.property_item.field_price
+    - field.field.node.property_item.field_price_text
+    - field.field.node.property_item.field_property_photo
+    - field.field.node.property_item.field_property_type
+    - field.field.node.property_item.field_rate
+    - field.field.node.property_item.field_reference
+    - field.field.node.property_item.field_sale_rent
+    - field.field.node.property_item.field_size
+    - field.field.node.property_item.field_teaser_image
+    - field.field.node.property_item.field_transfer_tax
+    - field.field.node.property_item.field_use_open_hours
+    - node.type.property_item
+  module:
+    - field_group
+    - fivestar
+    - leaflet
+    - options
+    - photoswipe
+    - slick
+    - tablefield
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_property_info:
+      children:
+        - field_sale_rent
+        - group_prope
+        - group_property_row_2
+        - group_propert
+      label: 'Property info'
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: property-info
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_prope:
+      children:
+        - field_property_type
+        - field_neighbourhood
+        - field_reference
+      label: 'Property row 1'
+      parent_name: group_property_info
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: property-rows-1
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_property_row_2:
+      children:
+        - field_baths
+        - field_size
+        - field_beds
+      label: 'Property row 2'
+      parent_name: group_property_info
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: property-rows-2
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_propert:
+      children:
+        - field_price
+        - field_price_text
+        - field_transfer_tax
+      label: 'Property row 3'
+      parent_name: group_property_info
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: property-rows-3
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.property_item.default
+targetEntityType: node
+bundle: property_item
+mode: default
+content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_ameities:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_baths:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_beds:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  field_building_features:
+    type: tablefield
+    label: above
+    settings:
+      row_header: true
+      column_header: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_coordinates:
+    type: leaflet_formatter_default
+    label: hidden
+    settings:
+      multiple_map: false
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      hide_empty_map: false
+      disable_wheel: false
+      gesture_handling: false
+      reset_map:
+        control: false
+        position: topright
+      popup: false
+      popup_content: ''
+      map_position:
+        force: false
+        center:
+          lat: !!float 0
+          lon: !!float 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+      icon:
+        iconType: marker
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        iconSize:
+          x: null
+          'y': null
+        iconAnchor:
+          x: null
+          'y': null
+        shadowSize:
+          x: null
+          'y': null
+        shadowAnchor:
+          x: null
+          'y': null
+        popupAnchor:
+          x: null
+          'y': null
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius": 100, "color": "red", "fillColor": "#f03", "fillOpacity": 0.5}'
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+        include_path: false
+      fullscreen:
+        control: false
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      weight: null
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_image_property_button:
+    type: photoswipe_field_formatter
+    label: hidden
+    settings:
+      photoswipe_node_style_first: ''
+      photoswipe_node_style: ''
+      photoswipe_image_style: ''
+      photoswipe_reference_image_field: ''
+      photoswipe_caption: ''
+      photoswipe_caption_custom: ''
+      photoswipe_view_mode: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_neighbourhood:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_price:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  field_price_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 32
+    region: content
+  field_property_photo:
+    type: slick_media
+    label: hidden
+    settings:
+      caption:
+        title: '0'
+        alt: '0'
+      optionset: for_property
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: true
+      layout: ''
+      view_mode: default
+      cache: 0
+      skin: ''
+      lazy: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      preload: true
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      overridables:
+        draggable: draggable
+        infinite: infinite
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: true
+      skin_arrows: ''
+      skin_dots: ''
+      use_theme_field: false
+      preserve_keys: false
+      visible_items: null
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_property_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 28
+    region: content
+  field_rate:
+    type: fivestar_stars
+    label: above
+    settings:
+      text_format: average
+      display_format: average
+      fivestar_widget: basic
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_reference:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  field_sale_rent:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_size:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_transfer_tax:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 32
+    region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  rate_property_item:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  field_agent_property: true
+  field_availability_daily: true
+  field_neighborhood_reference: true
+  field_open_hours: true
+  field_teaser_image: true
+  field_use_open_hours: true
+  langcode: true
+  rate_property_rate: true
+  search_api_excerpt: true

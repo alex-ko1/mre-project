@@ -1,0 +1,25 @@
+uuid: 21be6a6a-a972-4f13-adc0-6003cf444496
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.footer_form
+  module:
+    - webform
+  theme:
+    - sub_boot
+id: footer_form
+theme: sub_boot
+region: right_footer
+weight: -20
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Footer form'
+  label_display: '0'
+  provider: webform
+  webform_id: footer_form
+  default_data: ''
+  redirect: false
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 3cc34a30-39e5-4691-8f9a-710fb00a94c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.neighbourhood
+id: taxonomy_term.neighbourhood.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: neighbourhood
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

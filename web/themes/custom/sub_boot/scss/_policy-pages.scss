@@ -1,0 +1,22 @@
+.privacy-policy-page,
+.cookie-policy-page,
+.fees-page{
+   main{
+        @include center;
+        margin-bottom: 40px;
+        .block-page-title-block{
+            display: none;
+        }
+        h2{
+            font-size: 2,5em;
+        }
+        @media (max-width:768px) {
+            h2{
+                font-size: 2em;
+            }
+            .field--name-body{
+                font-size: 0.8em;
+            }
+        }
+    }
+}

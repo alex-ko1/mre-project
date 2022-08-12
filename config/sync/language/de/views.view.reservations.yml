@@ -1,0 +1,16 @@
+display:
+  default:
+    display_options:
+      title: 'Meine Reservierungen'
+      fields:
+        event_bat_unit_reference:
+          label: Einheit
+        event_dates:
+          label: Veranstaltungstermine
+      pager:
+        options:
+          tags:
+            next: 'Nächste ›'
+            previous: '‹ Vorherige'
+            first: «
+            last: »

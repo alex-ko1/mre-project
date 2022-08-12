@@ -1,0 +1,27 @@
+uuid: a715dff2-30a8-49b8-981d-f600c0733160
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - sub_boot
+_core:
+  default_config_hash: fimw2G0N0utCyfcfOVOmE-6n5Iy_wUp2KwyM9ycRrY0
+id: sub_boot_footer
+theme: sub_boot
+region: footer
+weight: -16
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,2 @@
+password_reset:
+  body: '[user:display-name], eine Anfrage zum Zurücksetzen des Passworts für Ihr Konto wurde bei [site:name] gestellt. Sie können sich jetzt anmelden, indem Sie auf diesen Link klicken oder ihn kopieren und in Ihren Browser einfügen: [user:one-time-login-url] Dieser Link kann nur einmal zum Anmelden verwendet werden und führt Sie zu einer Seite, auf der Sie Einstellungen vornehmen können Ihr Passwort. Es läuft nach einem Tag ab und es passiert nichts, wenn es nicht verwendet wird. -- [site:name]-Team'

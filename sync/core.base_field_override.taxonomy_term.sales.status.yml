@@ -1,0 +1,22 @@
+uuid: f3db471f-089b-42ae-b438-698c24698bb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sales
+id: taxonomy_term.sales.status
+field_name: status
+entity_type: taxonomy_term
+bundle: sales
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,145 @@
+uuid: 243cdda8-2a07-46d0-9b72-48df6187c6ab
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.property_item.body
+    - field.field.node.property_item.field_ameities
+    - field.field.node.property_item.field_baths
+    - field.field.node.property_item.field_beds
+    - field.field.node.property_item.field_building_features
+    - field.field.node.property_item.field_coordinates
+    - field.field.node.property_item.field_neighbourhood
+    - field.field.node.property_item.field_price
+    - field.field.node.property_item.field_property_photo
+    - field.field.node.property_item.field_property_type
+    - field.field.node.property_item.field_reference
+    - field.field.node.property_item.field_sale_rent
+    - field.field.node.property_item.field_size
+    - field.field.node.property_item.field_teaser_image
+    - field.field.node.property_item.field_transfer_tax
+    - image.style.medium
+    - node.type.property_item
+  module:
+    - field_group
+    - image
+    - options
+    - user
+third_party_settings:
+  field_group:
+    group_beds_price:
+      children:
+        - field_beds
+        - field_price
+      label: 'Beds + Price'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: field-group-left
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_bath_reference:
+      children:
+        - field_baths
+        - field_reference
+      label: 'Bath + Reference'
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: field-group-right
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.property_item.teaser
+targetEntityType: node
+bundle: property_item
+mode: teaser
+content:
+  field_baths:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_beds:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_neighbourhood:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_price:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: .
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_reference:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_sale_rent:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_teaser_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_ameities: true
+  field_building_features: true
+  field_coordinates: true
+  field_property_photo: true
+  field_property_type: true
+  field_size: true
+  field_transfer_tax: true
+  langcode: true
+  links: true

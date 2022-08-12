@@ -1,0 +1,42 @@
+uuid: efa10c99-6639-41ca-bb03-1835ab44716e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.neighbourhoods.body
+    - field.field.node.neighbourhoods.field_neighbourhood_image
+    - field.field.node.neighbourhoods.field_paragraph
+    - node.type.neighbourhoods
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.neighbourhoods.default
+targetEntityType: node
+bundle: neighbourhoods
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_neighbourhood_image: true
+  langcode: true

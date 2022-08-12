@@ -1,0 +1,22 @@
+uuid: f4817a80-d221-4f62-84b4-3ff8f53c19b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reservation_type
+id: node.reservation_type.sticky
+field_name: sticky
+entity_type: node
+bundle: reservation_type
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

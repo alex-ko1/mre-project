@@ -1,0 +1,28 @@
+elements: |
+  name:
+    '#title': 'Ім''я'
+    '#placeholder': 'Ім''я'
+    '#required_error': 'Будь ласка, введіть своє ім''я'
+  last_name:
+    '#title': Прізвище
+    '#placeholder': Прізвище
+  email_addres:
+    '#title': Email
+    '#placeholder': Email
+    '#required_error': 'Будь ласка, введіть свою електронну адресу'
+  phone_number:
+    '#title': 'Номер телефону'
+    '#required_error': 'Будь ласка, введіть свій номер телефону'
+  message:
+    '#title': Повідомлення
+    '#placeholder': Повідомлення
+    '#required_error': 'Залиште повідомлення'
+  actions:
+    '#submit__label': Надіслати
+settings:
+  confirmation_title: 'У вас вийшло!'
+  confirmation_message: 'Ми отримали ваш запит і зв&rsquo;яжемося з вами протягом 48 годин!'
+handlers:
+  email_v2:
+    settings:
+      body: "<strong>From:</strong>&nbsp;[site:mail]<br />\r\nДякую за ваш електронний лист! Ми зв&#39;яжемося з вами найближчим часом! :)"

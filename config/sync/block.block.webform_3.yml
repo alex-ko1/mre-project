@@ -1,0 +1,30 @@
+uuid: 380d872b-3cf6-4f41-8b0a-d22a24f4d466
+langcode: en
+status: false
+dependencies:
+  config:
+    - webform.webform.reservation
+  module:
+    - system
+    - webform
+  theme:
+    - sub_boot
+id: webform_3
+theme: sub_boot
+region: breadcrumb
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: reservation
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/properties/rent/*'

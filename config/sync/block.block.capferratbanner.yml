@@ -1,0 +1,30 @@
+uuid: 00637eef-1a72-4c69-a357-837e9e139dc0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:36f17e48-a5c4-4c96-9fc4-3c50948a1a9b'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: capferratbanner
+theme: sub_boot
+region: banner
+weight: -34
+provider: null
+plugin: 'block_content:36f17e48-a5c4-4c96-9fc4-3c50948a1a9b'
+settings:
+  id: 'block_content:36f17e48-a5c4-4c96-9fc4-3c50948a1a9b'
+  label: 'Cap-Ferrat Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/neighbourhoods/cap-ferrat\r\n/neighbourhoods/kap-ferra"

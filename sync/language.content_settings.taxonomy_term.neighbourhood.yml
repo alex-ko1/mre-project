@@ -1,0 +1,18 @@
+uuid: e2903b2b-b30b-4ef3-be64-76cdce06609f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.neighbourhood
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.neighbourhood
+target_entity_type_id: taxonomy_term
+target_bundle: neighbourhood
+default_langcode: site_default
+language_alterable: true

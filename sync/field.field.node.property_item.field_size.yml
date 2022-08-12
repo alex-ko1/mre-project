@@ -1,0 +1,23 @@
+uuid: 1423d211-e6d7-4f6a-ad11-b20be622e941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_size
+    - node.type.property_item
+id: node.property_item.field_size
+field_name: field_size
+entity_type: node
+bundle: property_item
+label: Size
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: 'sq m'
+field_type: decimal

@@ -1,0 +1,22 @@
+uuid: b31ce2ee-a2da-4646-8c57-e542645c2d57
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - sub_boot
+_core:
+  default_config_hash: vpPEuVxbk65EqNAZld7a7hTVWt1wrCE84EQ2NFWa6iI
+id: sub_boot_messages
+theme: sub_boot
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

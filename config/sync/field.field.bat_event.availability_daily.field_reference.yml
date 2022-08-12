@@ -1,0 +1,29 @@
+uuid: fe82539a-7971-44d9-95ad-dad78166ad86
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event.event_type.availability_daily
+    - field.storage.bat_event.field_reference
+    - node.type.property_item
+id: bat_event.availability_daily.field_reference
+field_name: field_reference
+entity_type: bat_event
+bundle: availability_daily
+label: reference
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      property_item: property_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: e8ab461c-82b0-463a-b9e6-941111c30116
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:46fa4970-3878-44e1-9489-07de6f465b0c'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: homebanner
+theme: sub_boot
+region: banner
+weight: -28
+provider: null
+plugin: 'block_content:46fa4970-3878-44e1-9489-07de6f465b0c'
+settings:
+  id: 'block_content:46fa4970-3878-44e1-9489-07de6f465b0c'
+  label: 'Home banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/neighborhoods\r\n/contact-us\r\n/services/sellers\r\n/services/renters\r\n/services/buyers\r\n/node/118"

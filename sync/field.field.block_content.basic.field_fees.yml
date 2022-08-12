@@ -1,0 +1,23 @@
+uuid: 9f26ab78-2db6-48dc-be13-c4db1ce24ce5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_fees
+  module:
+    - link
+id: block_content.basic.field_fees
+field_name: field_fees
+entity_type: block_content
+bundle: basic
+label: Fees
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

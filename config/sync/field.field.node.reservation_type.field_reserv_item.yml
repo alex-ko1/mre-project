@@ -1,0 +1,21 @@
+uuid: 2613b964-2710-466c-95a6-f86f3989493f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reserv_item
+    - node.type.reservation_type
+  module:
+    - text
+id: node.reservation_type.field_reserv_item
+field_name: field_reserv_item
+entity_type: node
+bundle: reservation_type
+label: reserv_item
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

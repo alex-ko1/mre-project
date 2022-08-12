@@ -1,0 +1,13 @@
+uuid: 6735a6e3-a1ae-494a-8224-f2183cfa1300
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_unit
+_core:
+  default_config_hash: NGLpvCcRyNnZp0nRxQOeqLWxZpLD-U7-o67rdje7hzw
+id: unit_publish_action
+label: 'Publish unit'
+type: bat_unit
+plugin: unit_publish_action
+configuration: {  }

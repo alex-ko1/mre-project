@@ -1,0 +1,70 @@
+uuid: cc8e13d5-af0f-483e-88b6-386ca3cfb3a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_building_features
+    - node.type.property_item
+  module:
+    - tablefield
+id: node.property_item.field_building_features
+field_name: field_building_features
+entity_type: node
+bundle: property_item
+label: 'Building Features'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    rebuild:
+      cols: '2'
+      rows: '11'
+    value:
+      0:
+        - ''
+        - ''
+      1:
+        - Entrance
+        - ''
+      2:
+        - 'Living room/dining area'
+        - ''
+      3:
+        - Lavatory
+        - ''
+      4:
+        - Bedroom
+        - ''
+      5:
+        - Bathroom
+        - ''
+      6:
+        - 'Shower room'
+        - ''
+      7:
+        - Kitchen
+        - ''
+      8:
+        - Garden
+        - ''
+      9:
+        - Terrace
+        - ''
+      10:
+        - Parking
+        - ''
+      caption: ''
+    format: null
+    caption: ''
+default_value_callback: ''
+settings:
+  export: false
+  restrict_rebuild: true
+  restrict_import: true
+  lock_values: false
+  cell_processing: 0
+  empty_rules:
+    ignore_table_structure: false
+    ignore_table_header: false
+field_type: tablefield

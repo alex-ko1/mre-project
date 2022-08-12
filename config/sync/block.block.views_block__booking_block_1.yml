@@ -1,0 +1,30 @@
+uuid: b46317a6-1cf6-4872-8ebf-09a52b9a5601
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.booking
+  module:
+    - system
+    - views
+  theme:
+    - sub_boot
+id: views_block__booking_block_1
+theme: sub_boot
+region: content
+weight: -30
+provider: null
+plugin: 'views_block:booking-block_1'
+settings:
+  id: 'views_block:booking-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: '1'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '*/add-reservation'

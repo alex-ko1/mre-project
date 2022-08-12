@@ -1,0 +1,8 @@
+uuid: d285874f-8da7-45d2-bcfd-65dff93d8edb
+langcode: en
+status: true
+dependencies: {  }
+id: seasonal-rentals
+label: 'Seasonal rentals'
+description: ''
+locked: false

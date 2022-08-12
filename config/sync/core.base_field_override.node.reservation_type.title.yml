@@ -1,0 +1,18 @@
+uuid: 910f8492-431e-40ea-81b2-268085dcc84e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reservation_type
+id: node.reservation_type.title
+field_name: title
+entity_type: node
+bundle: reservation_type
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

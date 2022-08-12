@@ -1,0 +1,25 @@
+uuid: 5608c1aa-1b5b-432f-b3d5-81b06c8494c9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a50374bc-2151-4486-9eaa-1a55674e3a1f'
+  module:
+    - block_content
+  theme:
+    - sub_boot
+id: loginblock
+theme: sub_boot
+region: nav_branding
+weight: -23
+provider: null
+plugin: 'block_content:a50374bc-2151-4486-9eaa-1a55674e3a1f'
+settings:
+  id: 'block_content:a50374bc-2151-4486-9eaa-1a55674e3a1f'
+  label: 'Login block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

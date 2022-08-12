@@ -1,0 +1,151 @@
+uuid: c03ee991-bc98-4934-8656-e02fd9fec245
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ameities
+    - field.storage.node.body
+    - field.storage.node.field_neighborhood_reference
+    - field.storage.node.field_neighbourhood
+    - field.storage.node.field_price
+    - field.storage.node.field_property_type
+    - field.storage.node.field_reference
+    - field.storage.node.field_sale_rent
+    - field.storage.node.field_size
+    - field.storage.node.field_telephone
+    - field.storage.node.field_transfer_tax
+    - search_api.server.database_server
+  module:
+    - node
+    - search_api
+id: default_index
+name: 'Default Index'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  entity_type:
+    label: 'Entity type'
+    property_path: search_api_entity_type
+    type: string
+  field_ameities:
+    label: Ameities
+    datasource_id: 'entity:node'
+    property_path: field_ameities
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_ameities
+  field_neighborhood_reference:
+    label: 'Neighborhood reference'
+    datasource_id: 'entity:node'
+    property_path: field_neighborhood_reference
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_neighborhood_reference
+  field_neighbourhood:
+    label: Neighbourhood
+    datasource_id: 'entity:node'
+    property_path: field_neighbourhood
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_neighbourhood
+  field_price:
+    label: Price
+    datasource_id: 'entity:node'
+    property_path: field_price
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_price
+  field_property_type:
+    label: 'Property type'
+    datasource_id: 'entity:node'
+    property_path: field_property_type
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_property_type
+  field_reference:
+    label: Reference
+    datasource_id: 'entity:node'
+    property_path: field_reference
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_reference
+  field_sale_rent:
+    label: Sale/Rent
+    datasource_id: 'entity:node'
+    property_path: field_sale_rent
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_sale_rent
+  field_size:
+    label: Size
+    datasource_id: 'entity:node'
+    property_path: field_size
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_size
+  field_telephone:
+    label: Telephone
+    datasource_id: 'entity:node'
+    property_path: field_telephone
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_telephone
+  field_transfer_tax:
+    label: 'Transfer tax'
+    datasource_id: 'entity:node'
+    property_path: field_transfer_tax
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_transfer_tax
+  language_with_fallback:
+    label: 'Language (with fallback)'
+    property_path: language_with_fallback
+    type: string
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: database_server

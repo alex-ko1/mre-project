@@ -1,0 +1,24 @@
+uuid: 341d3f79-f5ae-4727-adf6-a954bd374a83
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sub_boot
+id: pagetitle
+theme: sub_boot
+region: content
+weight: -39
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

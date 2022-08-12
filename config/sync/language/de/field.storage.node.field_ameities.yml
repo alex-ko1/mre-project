@@ -1,0 +1,24 @@
+settings:
+  allowed_values:
+    0:
+      label: Klimaanlage
+    1:
+      label: Doppelverglasung
+    2:
+      label: Fensterschatten
+    4:
+      label: Außenbeleuchtung
+    5:
+      label: Gegensprechanlage
+    6:
+      label: 'Elektrische Rollläden'
+    7:
+      label: Schiebefenster
+    8:
+      label: Glasfaser
+    9:
+      label: Alarmsystem
+    11:
+      label: 'Elektrisches Tor'
+    12:
+      label: Schwimmbad

@@ -1,0 +1,23 @@
+uuid: 472ce9c5-89ac-4c92-9eda-b8580b03d034
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transfer_tax
+    - node.type.property_item
+id: node.property_item.field_transfer_tax
+field_name: field_transfer_tax
+entity_type: node
+bundle: property_item
+label: 'Transfer tax'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

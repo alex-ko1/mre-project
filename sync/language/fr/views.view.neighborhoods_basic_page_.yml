@@ -1,0 +1,11 @@
+label: Villes
+display:
+  default:
+    display_options:
+      title: Villes
+      use_more_text: 'Plus d''info'
+      header:
+        area:
+          content:
+            value: "<p>La célèbre Côte d'Azur, qui se situe entre les Alpes.</p>\r\n"
+            format: basic_html

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+// font-family: 'Playfair Display', serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+
+html[lang="uk"]{
+    header,
+    .page-node-type-news-and-articles h1 .field--name-title,
+    .company-page blockquote.company-blockquote,
+    .contact-us-page #block-contactbuttonbanner #contact-banner-button,
+    body, h5, h6,
+    #block-views-block-news-basic-page-block-1 .views-field-title a,
+    #block-views-block-neighborhoods-basic-page-block-1 div.views-field-title a,
+    #block-rentbuybuttons .banner-buttons,
+    .neighborhoods-page .node__content h3,
+    .news-page #block-views-block-view-news-block-1,
+    .news-page #block-views-block-view-news-block-1 .view-view-news .view-content .views-row .fieldset__right .views-field-body,
+    div.flag-bookmark a,
+    .search-page .region-content form.search-form input,
+    .search-page .region-content ol.search-results h3 a,
+    .search-page .region-content .item-list h3,
+    .search-page .region-content ul.pagination.js-pager__items
+    .services-page .views-field-view-node,
+    .services-page .views-accordion-header,
+    .services-page .views-field-body p strong,
+    .services-page .views-field-view-node p strong,
+    footer{
+        font-family: 'Montserrat', sans-serif;
+    }
+}

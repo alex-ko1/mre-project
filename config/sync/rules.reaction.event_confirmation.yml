@@ -1,0 +1,62 @@
+uuid: f46899b2-9ce8-4dff-9fa1-d811a4c959de
+langcode: en
+status: false
+dependencies: {  }
+id: event_confirmation
+label: 'Event confirmation'
+events:
+  -
+    event_name: 'rules_entity_insert:bat_event--availability_daily'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 06fb9ed9-213f-466a-a813-697f80942f30
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 3bc83998-5b64-4d81-89cc-9d1e5b0904c3
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 0240140e-cd50-4ccd-adfe-56702e91a390
+        weight: 0
+        condition_id: rules_entity_is_new
+        negate: false
+        context_values: {  }
+        context_mapping:
+          entity: bat_event
+        context_processors: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 1ecd6fd4-335f-4661-ac6d-9501e777380b
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: f1ea65bd-2d5e-4009-8c25-fd62398063ff
+        weight: -44
+        action_id: rules_send_email
+        context_values:
+          to:
+            - mreproject.v3@gmail.com
+          subject: 'New reservation is created!'
+          message: 'User info'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

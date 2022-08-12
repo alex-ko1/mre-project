@@ -1,0 +1,30 @@
+uuid: dab68daa-436e-4414-9024-36bca98db2b8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:08ef54e8-806e-4539-9b26-8cb153b4c6d5'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: servicesbanner
+theme: sub_boot
+region: banner
+weight: -22
+provider: null
+plugin: 'block_content:08ef54e8-806e-4539-9b26-8cb153b4c6d5'
+settings:
+  id: 'block_content:08ef54e8-806e-4539-9b26-8cb153b4c6d5'
+  label: 'Services Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /services

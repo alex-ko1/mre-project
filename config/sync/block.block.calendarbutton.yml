@@ -1,0 +1,34 @@
+uuid: cf107fe6-f354-4b50-9c67-dc804def6911
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d31027db-b894-4dc9-947d-46bdd2925a44'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - sub_boot
+third_party_settings:
+  block_class:
+    classes: calendar-button
+id: calendarbutton
+theme: sub_boot
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:d31027db-b894-4dc9-947d-46bdd2925a44'
+settings:
+  id: 'block_content:d31027db-b894-4dc9-947d-46bdd2925a44'
+  label: 'Calendar button'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '*/add-reservation'

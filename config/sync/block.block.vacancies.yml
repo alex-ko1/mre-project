@@ -1,0 +1,30 @@
+uuid: 36f48266-bdb1-4f91-9ed0-f2ea28fa3299
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c5f34d97-fcd7-4d20-9261-4a85a85c966a'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: vacancies
+theme: sub_boot
+region: instagram
+weight: -36
+provider: null
+plugin: 'block_content:c5f34d97-fcd7-4d20-9261-4a85a85c966a'
+settings:
+  id: 'block_content:c5f34d97-fcd7-4d20-9261-4a85a85c966a'
+  label: 'Job Offers'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /company/career

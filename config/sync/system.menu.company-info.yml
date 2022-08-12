@@ -1,0 +1,8 @@
+uuid: a5f2d487-13c1-4da9-8a91-3b416e95bf09
+langcode: en
+status: true
+dependencies: {  }
+id: company-info
+label: 'Company info'
+description: ''
+locked: false

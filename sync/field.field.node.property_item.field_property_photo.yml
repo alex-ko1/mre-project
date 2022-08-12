@@ -1,0 +1,29 @@
+uuid: 0b768c22-2791-4a24-9e24-b6f302ad1ca7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_photo
+    - media.type.image
+    - node.type.property_item
+id: node.property_item.field_property_photo
+field_name: field_property_photo
+entity_type: node
+bundle: property_item
+label: 'Property photo'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

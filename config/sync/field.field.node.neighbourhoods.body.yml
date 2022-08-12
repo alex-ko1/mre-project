@@ -1,0 +1,23 @@
+uuid: 3817628b-7417-4ebc-a7a2-b116ec8f822a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.neighbourhoods
+  module:
+    - text
+id: node.neighbourhoods.body
+field_name: body
+entity_type: node
+bundle: neighbourhoods
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,427 @@
+.properties-page,
+.property-sale-page,
+.property-rent-page{
+    @include prebanner;
+    #block-propertybanner{
+        @include banner;
+        p{
+            letter-spacing: 0px;
+            line-height: 32px;
+        }
+        @media (max-width:767px) {
+            p{
+                line-height: 25px;
+            }
+            .field--name-body{
+                top: 10%;
+            }
+        }
+        @media (max-width:678px) {
+            .field--name-body{
+             font-size: 0.7em;   
+            }
+        }
+        @media (max-width:567px) {
+            p{
+                line-height: 18px;
+            }
+        }
+        @media (max-width:468px) {
+            .field--name-body{
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
+    h1.page-title {
+        display: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .region.region-content{
+        padding: 0;
+    }
+    main>.row>.region>.block {
+        @include center;
+    }
+    .view-empty {
+        padding-bottom: 100px;
+        blockquote.block-404 {
+            font-size: 24px;
+            border-left: 5px solid #ebe9eb;
+            padding: 2.5em 1em;
+            @media (max-width: 767px) {
+                text-align: center;
+            }
+        }
+        p.block-404 {
+            position: relative;
+            width: auto;
+            float: right;
+            line-height: 18px;
+            a {
+                display: inline-block;
+                color:  $white;
+                font-weight: 600;
+                font-size: 14px;
+                letter-spacing: .06em;
+                text-align: center;
+                background: $black;        
+                border: 1px solid $black;
+                min-width: 200px;
+                padding: 7px 15px;
+                text-decoration: none;
+                will-change: transform;
+                transition: all .4s ease;
+            }
+            a:hover {
+                color: $black;
+                background:  $white;
+                transition: all .4s ease;
+            }
+            @media (max-width: 767px) {
+                float: none;
+                text-align: center;
+            }
+        }
+    }
+}
+.properties-page #block-views-block-properties-block-1-2{
+    .view-id-properties.view-display-id-block_1{
+        @include center;
+    }
+}
+.property-sale-page #block-views-block-property-sale-block-1{
+    .view-id-property_sale{
+        @include center;
+    }
+}
+.property-rent-page #block-views-block-property-rent-block-1{
+    .view-id-property_rent{
+        @include center;
+    }
+}
+.properties-page #block-views-block-properties-block-1-2,
+.property-sale-page #block-views-block-property-sale-block-1,
+.property-rent-page #block-views-block-property-rent-block-1{
+    background-color:  $whitesmoke;
+    width: 100%;
+    padding-bottom: 40px;
+    .view-filters .form--inline{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2em;
+        align-items: flex-end;
+        @media (max-width:464px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .form-item{
+                margin: 0.5em 0;
+            }
+        }
+        .form-item label{
+            font-size: 14px;
+            margin-left: 11px;
+            margin-bottom: 5px;
+        }
+        input.form-text:focus{
+            box-shadow: none;
+        }
+        .form-type-select{
+            width: 170px;
+            select.form-select{
+                border: 0px solid;
+                border-radius: 0px;
+                height: 3.4em;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+        [data-drupal-selector="edit-field-price-value-wrapper"]{
+            width: 230px;
+            border: 0px solid;
+            border-radius: 0px;
+
+            .fieldset-wrapper{
+                padding: 0 1em;
+                font-size: 0.86em;
+                position: relative;
+                &::after{
+                    content: "- Price -";
+                    background-color:  $white;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 2;
+                    left: 0;
+                    padding: 13px;
+                    font-size: 1.1em;
+                    background-image: url(../icons/arrow.png);
+                    background-size: 12px;
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    background-position-x: 90%;
+                    pointer-events: none;
+                    transition: 0.2s;
+                }
+
+                &:hover::after{
+                    opacity: 0;
+                }
+                &:focus::after{
+                    display: none;
+                }
+            }
+            .form-item{
+                margin: 0.5em 0;
+            }
+            .form-item:nth-child(1) {
+                float: left;
+            }
+            .form-item:nth-child(2) {
+                float: right;
+                display: flex;
+                &::after{
+                    content: "€";
+                    margin-bottom: 5px;
+                }
+            }
+            .form-item > label{
+                display: none;
+            }
+            legend {
+                display: block;
+                font-size: 14px;
+                padding: 0;
+                border: none;
+                padding-left: 11px;
+                padding-bottom: 5px;
+            }
+            .form-item:nth-child(2) .form-text {
+                text-align: right;
+            }
+            .form-text {
+                width: 90px;
+                margin: 0 0 5px 0;
+                padding: 0;
+                border: 0;
+                background: transparent;
+                &.form-control{
+                    font-size: 1em;
+                    pointer-events: none;
+                }
+            }
+            .ui-slider{
+                width: 220%;
+                height: 0.6rem;
+                &>span{
+                    left: 0%;
+                    border-radius: 50%;
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+        }
+        .form-actions input.btn{
+            @include btn;
+            &:hover{
+                color: $black;
+                background: 0 0;
+                border: 1px solid $black;
+            }
+        }
+    }
+    .views-row{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 60px;
+        @media (max-width:1310px) {
+            column-gap: 30px;
+        }
+        @media (max-width:795px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        margin-bottom: 34px;
+        .views-col {
+            position: relative;
+            width: 353px !important;
+            background-color:  $white;
+            @media (max-width:390px) {
+                width: 300px !important;
+            }
+            &>.views-field:nth-child(n+2){
+                padding: 0 20px;
+            }
+            .views-field-field-property-photo{
+                img{
+                    width: 353px;
+                    height: 242px;
+                }
+            }
+            .views-field.views-field-field-sale-rent{
+                position: absolute;
+                top: 20px;
+                right: 0;
+                background: rgba(0, 0, 0, 0.9);
+                padding: 0.7em 25px;
+                a{
+                    color:  $white;
+                }
+            }
+            .views-field-title{
+                margin-top: 1em;
+                overflow: auto;
+                height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                a{
+                    color: $black;
+                    text-decoration: none;
+                    font-size: 1em;
+                }
+            }
+            .views-field-field-neighbourhood{
+                margin-top: 1em;
+                a{
+                    color: $gray;
+                    line-height: 16px;
+                    font-size: .9em;
+                }
+            }
+            .fields-beds-bath{
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 0;
+                margin-bottom: 1em;
+                border-bottom: 1px solid #999999;
+                .views-field-field-beds{
+                    display: flex;
+                    span{
+                        padding-left: 10px;
+                    }
+                    &::before{
+                        content: " ";
+                        background-image: url(../icons/beds.png);
+                        background-repeat: no-repeat;
+                        width: 26px;
+                    }
+                }
+                .views-field-field-baths{
+                    display: flex;
+                    span{
+                        padding-left: 10px;
+                    }
+                    &::before{
+                        content: " ";
+                        background-image: url(../icons/baths.png);
+                        width: 26px;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            .fields-price-ref{
+                display: flex;
+                justify-content: space-between;
+                margin: 1em 0;
+                .views-field{
+                    display: flex;
+                }
+                .views-field-field-price{
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 26px;
+                }
+                .views-field-field-reference{
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #A6A6A6;
+                }
+            }
+            .views-field-view-node{
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                transition: .6s;
+                &:hover{
+                    background: rgba(0, 0, 0, 0.6);
+                    opacity: 1;
+                }
+                a{
+                    text-decoration: none;
+                    border: 1px solid #f4f4f4;
+                    padding: 5px 10px;
+                    color: #f4f4f4;
+                    &:hover{
+                        background: #f4f4f4;
+                        color: $black;
+                        transition: 0.6s;
+                    }
+                }
+            }
+        }
+    }
+    @include pagination;
+}
+html[lang="en"]{
+    .properties-page #block-views-block-properties-block-1-2,
+    .property-sale-page #block-views-block-property-sale-block-1,
+    .property-rent-page #block-views-block-property-rent-block-1{
+        .view-filters .form--inline{
+            [data-drupal-selector="edit-field-price-value-wrapper"] legend{
+                display: none;
+            }
+            .form-item label{
+                display: none;
+            }
+        }
+    }
+}
+html[lang="uk"]{
+    #block-views-block-properties-block-1-2 .view-filters .form--inline [data-drupal-selector="edit-field-price-value-wrapper"] .fieldset-wrapper::after{
+        content: "- Ціна -";
+    }
+    #block-views-block-property-sale-block-1 .view-filters .form--inline [data-drupal-selector="edit-field-price-value-wrapper"] .fieldset-wrapper::after{
+        content: "- Ціна -";
+    }
+    #block-views-block-property-rent-block-1 .view-filters .form--inline [data-drupal-selector="edit-field-price-value-wrapper"] .fieldset-wrapper::after{
+        content: "- Ціна -";
+    }
+}
+html[lang="fr"]{
+    #block-views-block-properties-block-1-2 .view-filters .form--inline [data-drupal-selector="edit-field-price-value-wrapper"] .fieldset-wrapper::after{
+        content: "- Prix -";
+    }
+    #block-views-block-property-sale-block-1 .view-filters .form--inline [data-drupal-selector="edit-field-price-value-wrapper"] .fieldset-wrapper::after{
+        content: "- Prix -";
+    }
+    #block-views-block-property-rent-block-1 .view-filters .form--inline [data-drupal-selector="edit-field-price-value-wrapper"] .fieldset-wrapper::after{
+        content: "- Prix -";
+    }
+}
+html[lang="de"]{
+    #block-views-block-properties-block-1-2 .view-filters .form--inline [data-drupal-selector="edit-field-price-value-wrapper"] .fieldset-wrapper::after{
+        content: "- Preis -";
+    }
+    #block-views-block-property-sale-block-1 .view-filters .form--inline [data-drupal-selector="edit-field-price-value-wrapper"] .fieldset-wrapper::after{
+        content: "- Preis -";
+    }
+    #block-views-block-property-rent-block-1 .view-filters .form--inline [data-drupal-selector="edit-field-price-value-wrapper"] .fieldset-wrapper::after{
+        content: "- Preis -";
+    }
+}

@@ -1,0 +1,57 @@
+uuid: 796498b0-f915-43e1-ba6b-904a66ca3469
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - bat_booking
+    - bat_event
+    - bee
+    - comment
+    - contact
+    - filter
+    - fivestar
+    - flag
+    - media
+    - paragraphs_type_permissions
+    - search
+    - shortcut
+    - smtp
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'administer smtp module'
+  - 'create bat_booking entities'
+  - 'create bat_booking entities of bundle standard'
+  - 'create bat_event entities of bundle availability_daily'
+  - 'create bee reservation'
+  - 'delete own bat_booking entities'
+  - 'delete own bat_booking entities of bundle standard'
+  - 'flag bookmark'
+  - 'post comments'
+  - 'rate content'
+  - 'search content'
+  - 'skip comment approval'
+  - 'unflag bookmark'
+  - 'update own bat_booking entities'
+  - 'update own bat_booking entities of bundle standard'
+  - 'use text format basic_html'
+  - 'view any booking entity of bundle standard'
+  - 'view calendar data for any availability_daily event'
+  - 'view calendar data for any availability_hourly event'
+  - 'view media'
+  - 'view own bat_booking entities of bundle standard'
+  - 'view own bat_event entities of bundle availability_daily'
+  - 'view own booking entities of bundle standard'
+  - 'view paragraph content paragraph_image'
+  - 'view paragraph content text_block'

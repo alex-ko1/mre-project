@@ -1,0 +1,8 @@
+settings:
+  allowed_values:
+    -
+      label: Квартира
+    -
+      label: Будинок
+    -
+      label: Вілла

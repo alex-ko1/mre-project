@@ -1,0 +1,8 @@
+uuid: a660b742-12d5-4e98-84f4-f1a6efd11130
+langcode: en
+status: true
+dependencies: {  }
+name: 'Operation with property'
+vid: operation_with_property
+description: ''
+weight: 0

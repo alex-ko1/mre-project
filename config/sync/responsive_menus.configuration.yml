@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: Ew71dtLpbljPB4lmHfbm09DRmpU18l9fJZxgLKI-DDI
+style: google_nexus
+ignore_admin: 1
+style_settings:
+  selector_info: ''
+  responsive_menus_google_nexus_css_selectors: '#main-menu'
+  responsive_menus_google_nexus_use_ecoicons: '1'
+  responsive_menus_google_nexus_icons: "\\ue005\r\n\\ue006"
+  responsive_menus_google_nexus_icon_fallback: '&#57347;'

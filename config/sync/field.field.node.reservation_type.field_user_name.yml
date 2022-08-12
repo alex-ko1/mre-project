@@ -1,0 +1,21 @@
+uuid: 6496db95-2e30-43b8-9dbd-208d2d2db91d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_name
+    - node.type.reservation_type
+  module:
+    - options
+id: node.reservation_type.field_user_name
+field_name: field_user_name
+entity_type: node
+bundle: reservation_type
+label: user_name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

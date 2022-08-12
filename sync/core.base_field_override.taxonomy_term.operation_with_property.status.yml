@@ -1,0 +1,22 @@
+uuid: 411338a5-2580-44d2-8d0c-f0259d197ab6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.operation_with_property
+id: taxonomy_term.operation_with_property.status
+field_name: status
+entity_type: taxonomy_term
+bundle: operation_with_property
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,8 @@
+uuid: fda1369e-82c2-4332-a22b-55456e75c723
+langcode: en
+status: true
+dependencies: {  }
+id: sales
+label: Sales
+description: ''
+locked: false

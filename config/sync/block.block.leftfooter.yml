@@ -1,0 +1,25 @@
+uuid: 7ad651e3-a91c-4ab3-983f-bbac9067864a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:top_header:cd57d5c1-910f-49bd-b73e-a64b2dd306c8'
+  module:
+    - block_content
+  theme:
+    - sub_boot
+id: leftfooter
+theme: sub_boot
+region: left_footer
+weight: -18
+provider: null
+plugin: 'block_content:cd57d5c1-910f-49bd-b73e-a64b2dd306c8'
+settings:
+  id: 'block_content:cd57d5c1-910f-49bd-b73e-a64b2dd306c8'
+  label: 'Left footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

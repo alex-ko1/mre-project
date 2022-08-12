@@ -1,0 +1,21 @@
+uuid: 2c870cc7-e008-43f9-93eb-b62526908f80
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event.event_type.availability_hourly
+    - field.storage.bat_event.event_state_reference
+id: bat_event.availability_hourly.event_state_reference
+field_name: event_state_reference
+entity_type: bat_event
+bundle: availability_hourly
+label: State
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:state'
+  handler_settings: {  }
+field_type: entity_reference

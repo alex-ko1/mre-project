@@ -1,0 +1,28 @@
+elements: |
+  name:
+    '#title': Vorname
+    '#placeholder': Vorname
+    '#required_error': 'Bitte geben Sie Ihren Namen ein'
+  last_name:
+    '#title': Nachname
+    '#placeholder': Nachname
+  email_addres:
+    '#title': 'Email Addresse'
+    '#placeholder': 'Email Addresse'
+    '#required_error': 'Bitte geben Sie ihre E-Mail Adresse ein'
+  phone_number:
+    '#title': Telefonnummer
+    '#required_error': 'Bitte gib deine Telefonnummer ein'
+  message:
+    '#title': Nachricht
+    '#placeholder': Nachricht
+    '#required_error': 'Hinterlass eine Nachricht'
+  actions:
+    '#submit__label': Senden
+settings:
+  confirmation_title: 'Du hast es!'
+  confirmation_message: 'Wir haben Ihre Anfrage erhalten und werden uns innerhalb von 48 Stunden bei Ihnen melden!'
+handlers:
+  email_v2:
+    settings:
+      body: "<strong>From:</strong>&nbsp;[site:mail]<br />\r\nVielen Dank f&uuml;r Ihre E-Mail! Wir werden uns bald bei Ihnen melden! :)"

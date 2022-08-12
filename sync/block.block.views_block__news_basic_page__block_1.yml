@@ -1,0 +1,29 @@
+uuid: f74779f6-4b7f-4a6c-ba78-ec757c1cbf46
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_basic_page_
+  module:
+    - system
+    - views
+  theme:
+    - sub_boot
+id: views_block__news_basic_page__block_1
+theme: sub_boot
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:news_basic_page_-block_1'
+settings:
+  id: 'views_block:news_basic_page_-block_1'
+  label: 'News and Articles'
+  label_display: visible
+  provider: views
+  views_label: 'News and Articles'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

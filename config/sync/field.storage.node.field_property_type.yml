@@ -1,0 +1,30 @@
+uuid: 76fb0c60-a1ae-45f4-9b70-96076cf79497
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_property_type
+field_name: field_property_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Apartment
+    -
+      value: '2'
+      label: House
+    -
+      value: '3'
+      label: Villa
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,40 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: Більше
+        field_beds:
+          label: Спальні
+        field_baths:
+          label: Ванни
+        field_reference:
+          label: Посилання
+      exposed_form:
+        options:
+          bef:
+            filter:
+              field_property_type_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Усі -| - Тип власності -'
+              field_beds_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Усі -| - Ліжка -'
+              field_baths_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Усі -| - Ванни -'
+              field_neighbourhood_target_id:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Усі -| - Місцевість -'
+          submit_button: Застосувати
+      filters:
+        langcode:
+          expose:
+            description: ''
+      empty:
+        area_text_custom:
+          content: "<blockquote class=\"block-404\">На жаль, немає товарів, які відповідають вашим вимогам. Будь ласка спробуйте ще раз.</blockquote>\r\n<p class=\"block-404\"><a href=\"https://mreproject.dev.drudesk.com/\">Поверніться на початкову сторінку</a></p>"

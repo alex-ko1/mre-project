@@ -1,0 +1,42 @@
+uuid: 04a485b1-ee29-4375-aaf7-b0bd619b999b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.neighbourhoods.body
+    - field.field.node.neighbourhoods.field_availability_daily
+    - field.field.node.neighbourhoods.field_neighbourhood_image
+    - field.field.node.neighbourhoods.field_open_hours
+    - field.field.node.neighbourhoods.field_paragraph
+    - field.field.node.neighbourhoods.field_use_open_hours
+    - image.style.large
+    - node.type.neighbourhoods
+  module:
+    - image
+    - user
+id: node.neighbourhoods.teaser
+targetEntityType: node
+bundle: neighbourhoods
+mode: teaser
+content:
+  field_neighbourhood_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_availability_daily: true
+  field_open_hours: true
+  field_paragraph: true
+  field_use_open_hours: true
+  langcode: true
+  links: true

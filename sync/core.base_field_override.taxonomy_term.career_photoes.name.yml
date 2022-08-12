@@ -1,0 +1,18 @@
+uuid: cb4d300a-74ed-4052-b102-88d5eada7b3c
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.career_photoes
+id: taxonomy_term.career_photoes.name
+field_name: name
+entity_type: taxonomy_term
+bundle: career_photoes
+label: 'Назва (ім''я)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

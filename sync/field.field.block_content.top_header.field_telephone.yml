@@ -1,0 +1,23 @@
+uuid: d4d850b5-6349-4f4b-b47c-4da3bacf2ad3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header
+    - field.storage.block_content.field_telephone
+  module:
+    - telephone
+id: block_content.top_header.field_telephone
+field_name: field_telephone
+entity_type: block_content
+bundle: top_header
+label: Telephone
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ' +33 4 93 76 87 54'
+default_value_callback: ''
+settings: {  }
+field_type: telephone

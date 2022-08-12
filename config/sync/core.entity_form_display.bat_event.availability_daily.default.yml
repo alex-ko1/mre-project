@@ -1,0 +1,39 @@
+uuid: cf6ff53f-63c7-4d7e-ac2e-73dfbffacb63
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event.event_type.availability_daily
+    - field.field.bat_event.availability_daily.event_bat_unit_reference
+    - field.field.bat_event.availability_daily.event_dates
+    - field.field.bat_event.availability_daily.event_series
+    - field.field.bat_event.availability_daily.event_state_reference
+    - field.field.bat_event.availability_daily.field_event_webform_submission
+id: bat_event.availability_daily.default
+targetEntityType: bat_event
+bundle: availability_daily
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  event_bat_unit_reference: true
+  event_dates: true
+  event_series: true
+  event_state_reference: true
+  field_event_webform_submission: true

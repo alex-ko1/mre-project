@@ -1,0 +1,12 @@
+uuid: 08a9990f-60dd-4c7d-9ec8-1f7a2a92c7f2
+langcode: en
+status: true
+dependencies: {  }
+id: block1
+label: CAT
+classes: homapage__block-cat
+type: component
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

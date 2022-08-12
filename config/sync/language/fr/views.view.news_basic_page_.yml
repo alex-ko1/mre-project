@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: 'Plus d`Info'
+      use_more_text: 'Les nouvelles'
+      title: 'Nouvelles et articles'

@@ -1,0 +1,33 @@
+uuid: 2cacda3d-298c-476a-a074-b49844e4a178
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.career_gallery.field_media_image_1
+    - image.style.medium
+    - media.type.career_gallery
+  module:
+    - image
+id: media.career_gallery.media_library
+targetEntityType: media
+bundle: career_gallery
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_image_1: true
+  langcode: true
+  name: true
+  uid: true

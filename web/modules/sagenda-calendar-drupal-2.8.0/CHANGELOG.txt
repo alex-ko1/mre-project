@@ -1,0 +1,9 @@
+== Changelog ==
+= 2.8.0 =
+* ADDED : Ability to go directly to an event via link (even id passed via URL). 
+* ADDED : As account owner I can remove the "i" information button from Frontend.
+* IMPROVED : Lithuanian translations.
+
+= 2.7.0 =
+* ADDED : New "work week" view. Display only Monday to Friday.
+* FIXED : Remove a Drupal Warning log message "Warning: The use statement with non-compound name 'Unirest' has no effect in include_once()"

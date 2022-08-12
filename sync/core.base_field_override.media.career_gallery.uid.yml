@@ -1,0 +1,20 @@
+uuid: 122b02bf-56eb-41c8-8142-fe12e9d7c73f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.career_gallery
+id: media.career_gallery.uid
+field_name: uid
+entity_type: media
+bundle: career_gallery
+label: Автор
+description: 'Ідентифікатор користувача, що є автором.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

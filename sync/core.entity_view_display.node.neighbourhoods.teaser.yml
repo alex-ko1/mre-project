@@ -1,0 +1,35 @@
+uuid: 04a485b1-ee29-4375-aaf7-b0bd619b999b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.neighbourhoods.body
+    - field.field.node.neighbourhoods.field_neighbourhood_image
+    - field.field.node.neighbourhoods.field_paragraph
+    - image.style.large
+    - node.type.neighbourhoods
+  module:
+    - image
+    - user
+id: node.neighbourhoods.teaser
+targetEntityType: node
+bundle: neighbourhoods
+mode: teaser
+content:
+  field_neighbourhood_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_paragraph: true
+  langcode: true
+  links: true

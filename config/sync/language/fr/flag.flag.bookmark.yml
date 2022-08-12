@@ -1,0 +1,7 @@
+label: Signet
+flag_short: Épingler
+flag_long: 'Ajouter cet élément de propriété à vos favoris'
+flag_message: 'Cet élément a été ajouté à vos favoris.'
+unflag_short: 'Retirer l''épingle'
+unflag_long: 'Supprimer ceе élément de vos favoris'
+unflag_message: 'Cet élément de propriété a été supprimé de vos favoris'

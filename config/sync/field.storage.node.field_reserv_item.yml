@@ -1,0 +1,20 @@
+uuid: 04503935-4c25-43b9-8c29-7a4423362f9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_reserv_item
+field_name: field_reserv_item
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

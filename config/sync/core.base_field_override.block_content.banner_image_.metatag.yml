@@ -1,0 +1,18 @@
+uuid: 3613793a-32c3-465e-8d11-2f3a378d1944
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_image_
+id: block_content.banner_image_.metatag
+field_name: metatag
+entity_type: block_content
+bundle: banner_image_
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

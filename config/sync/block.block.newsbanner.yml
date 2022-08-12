@@ -1,0 +1,30 @@
+uuid: 79ffea7f-62fd-41c2-a1b8-f541f28760a7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:bccb994b-7a1d-483f-8b70-c737749bafdf'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: newsbanner
+theme: sub_boot
+region: banner
+weight: -31
+provider: null
+plugin: 'block_content:bccb994b-7a1d-483f-8b70-c737749bafdf'
+settings:
+  id: 'block_content:bccb994b-7a1d-483f-8b70-c737749bafdf'
+  label: 'News Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /news

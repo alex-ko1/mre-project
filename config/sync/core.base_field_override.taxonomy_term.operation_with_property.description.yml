@@ -1,0 +1,20 @@
+uuid: 35157ad2-455b-46d6-8d65-b1c78c35b76a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.operation_with_property
+  module:
+    - text
+id: taxonomy_term.operation_with_property.description
+field_name: description
+entity_type: taxonomy_term
+bundle: operation_with_property
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,60 @@
+uuid: 0e4d3f3f-db5a-40d7-aaca-0d86de7a1c4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ameities
+field_name: field_ameities
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Air-conditioning
+    -
+      value: '2'
+      label: 'Double glazing'
+    -
+      value: '3'
+      label: 'Window shade'
+    -
+      value: '4'
+      label: 'Electric awnings'
+    -
+      value: '5'
+      label: 'Outdoor lighting'
+    -
+      value: '6'
+      label: Intercom
+    -
+      value: '7'
+      label: 'Electric shutters'
+    -
+      value: '8'
+      label: 'Sliding windows'
+    -
+      value: '9'
+      label: 'Optical fiber'
+    -
+      value: '10'
+      label: 'Alarm system'
+    -
+      value: '11'
+      label: Digicode
+    -
+      value: '12'
+      label: 'Electric gate'
+    -
+      value: '13'
+      label: 'Swimming pool'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

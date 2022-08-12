@@ -1,0 +1,22 @@
+uuid: b7570148-cf2b-4b9b-83e5-e80020cc25e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header
+id: block_content.top_header.status
+field_name: status
+entity_type: block_content
+bundle: top_header
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

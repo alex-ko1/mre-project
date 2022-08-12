@@ -1,0 +1,20 @@
+uuid: d464620e-8eba-486f-af79-8b7669512f13
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.career_photoes
+  module:
+    - path
+id: taxonomy_term.career_photoes.path
+field_name: path
+entity_type: taxonomy_term
+bundle: career_photoes
+label: URL-синонім
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

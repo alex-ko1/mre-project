@@ -1,0 +1,141 @@
+uuid: 10ed201d-bf99-4e4e-b670-6a615ebf0027
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage.body
+    - field.field.node.homepage.layout_builder__layout
+    - node.type.homepage
+    - views.view.featured_properties_slider_general
+    - views.view.neighborhoods_basic_page_
+    - views.view.news_basic_page_
+  content:
+    - 'block_content:basic:6cf7e1b9-92b7-4352-936d-ed7e29be0b46'
+    - 'block_content:basic:7ace7ad6-8a64-4390-a6e2-aaec1c693989'
+  module:
+    - block_content
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Main custom section'
+          context_mapping: {  }
+        components:
+          e0316373-c955-445d-9294-74569ef88b65:
+            uuid: e0316373-c955-445d-9294-74569ef88b65
+            region: content
+            configuration:
+              id: 'views_block:neighborhoods_basic_page_-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: -10
+            additional: {  }
+          416ce130-46ef-4417-b127-cef1a011dfe3:
+            uuid: 416ce130-46ef-4417-b127-cef1a011dfe3
+            region: content
+            configuration:
+              id: 'block_content:6cf7e1b9-92b7-4352-936d-ed7e29be0b46'
+              label: CAT
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: -9
+            additional:
+              layout_builder_styles_style:
+                block1: block1
+          c28db3ef-36e2-4fff-8201-9e55652915c9:
+            uuid: c28db3ef-36e2-4fff-8201-9e55652915c9
+            region: content
+            configuration:
+              id: 'block_content:6cf7e1b9-92b7-4352-936d-ed7e29be0b46'
+              label: CAT
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: -6
+            additional:
+              layout_builder_styles_style:
+                block1: block1
+          f4037761-c293-4d5a-b262-2df3326d2e34:
+            uuid: f4037761-c293-4d5a-b262-2df3326d2e34
+            region: content
+            configuration:
+              id: 'views_block:news_basic_page_-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: -5
+            additional: {  }
+          9adc448b-cc31-4915-b22a-0eeba282c833:
+            uuid: 9adc448b-cc31-4915-b22a-0eeba282c833
+            region: content
+            configuration:
+              id: 'block_content:7ace7ad6-8a64-4390-a6e2-aaec1c693989'
+              label: 'Services Block'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: -8
+            additional:
+              layout_builder_styles_style:
+                services: services
+          9497fb6b-d247-4782-883d-995f33964dff:
+            uuid: 9497fb6b-d247-4782-883d-995f33964dff
+            region: content
+            configuration:
+              id: 'views_block:featured_properties_slider_general-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: -7
+            additional: {  }
+        third_party_settings: {  }
+id: node.homepage.default
+targetEntityType: node
+bundle: homepage
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  layout_builder__layout: true

@@ -1,0 +1,10 @@
+expression:
+  actions:
+    actions:
+      -
+        context_values:
+          message: 'Check MRE profile for details. User info: {{bat_event.uid.entity.mail.value}} / {{bat_event.uid.entity.name.value}}'
+      -
+        context_values:
+          subject: "La réservation est créée avec succès\_! Visitez votre profil MRE pour plus de détails."
+          message: 'Votre profil MRE: https://mreproject.dev.drudesk.com/fr/user/login. Pour annuler la réservation, contactez l''administrateur.'

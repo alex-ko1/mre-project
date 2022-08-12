@@ -1,0 +1,7 @@
+expression:
+  actions:
+    actions:
+      1:
+        context_values:
+          subject: 'Reservierung wurde erfolgreich erstellt! Einzelheiten finden Sie in Ihrem MRE Profil.'
+          message: 'Ihr MRE Profil: https://mreproject.dev.drudesk.com/de/user/login. Um die Reservierung zu stornieren, wenden Sie sich an den Administrator.'

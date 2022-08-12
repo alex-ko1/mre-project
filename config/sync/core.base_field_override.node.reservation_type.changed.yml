@@ -1,0 +1,18 @@
+uuid: 43099f63-4a43-4ab0-b3ab-82c64879d6c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reservation_type
+id: node.reservation_type.changed
+field_name: changed
+entity_type: node
+bundle: reservation_type
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

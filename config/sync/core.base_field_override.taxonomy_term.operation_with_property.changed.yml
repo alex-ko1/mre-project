@@ -1,0 +1,18 @@
+uuid: db28cb0f-b644-49fe-9de0-4dabafdb1edb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.operation_with_property
+id: taxonomy_term.operation_with_property.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: operation_with_property
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

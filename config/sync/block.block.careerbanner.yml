@@ -1,0 +1,30 @@
+uuid: a86dfd4b-7c2b-4c15-b3f4-aa643bb51dc3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:004f77b8-b9a3-434f-8f9c-0beb3e12f62f'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: careerbanner
+theme: sub_boot
+region: banner
+weight: -33
+provider: null
+plugin: 'block_content:004f77b8-b9a3-434f-8f9c-0beb3e12f62f'
+settings:
+  id: 'block_content:004f77b8-b9a3-434f-8f9c-0beb3e12f62f'
+  label: 'Career Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /company/career

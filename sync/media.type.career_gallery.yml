@@ -1,0 +1,13 @@
+uuid: 1dda9f6c-3dd5-43fb-abea-d83028ecbf11
+langcode: en
+status: true
+dependencies: {  }
+id: career_gallery
+label: 'Career gallery'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map: {  }

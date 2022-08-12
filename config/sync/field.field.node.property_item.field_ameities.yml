@@ -1,0 +1,21 @@
+uuid: b1892822-774a-4488-8f68-4c9aab9ee5f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ameities
+    - node.type.property_item
+  module:
+    - options
+id: node.property_item.field_ameities
+field_name: field_ameities
+entity_type: node
+bundle: property_item
+label: Ameities
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

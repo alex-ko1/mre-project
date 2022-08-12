@@ -1,0 +1,22 @@
+sagenda.admin_config_system:
+  path: '/admin/config/sagenda'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Sagenda Settings'
+  requirements:
+    _permission: 'access administration pages'
+
+sagenda.settings:
+  path: '/admin/config/sagenda/settings'
+  defaults:
+    _form: 'Drupal\sagenda\Form\SagendaConfig'
+    _title: 'Sagenda Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+sagenda:
+  path: /sagenda/calendar
+  defaults:
+    _controller: Drupal\sagenda\Controller\SagendaController::displayCalendar
+  requirements:
+    _permission: 'access content'

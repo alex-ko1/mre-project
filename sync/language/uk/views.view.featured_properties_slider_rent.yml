@@ -1,0 +1,13 @@
+label: 'Рекомендоване майно'
+display:
+  default:
+    display_options:
+      title: 'Рекомендоване майно'
+      fields:
+        field_beds:
+          label: Ліжка
+        field_baths:
+          label: Ванни
+        field_reference:
+          label: Посилання
+      use_more_text: Більше

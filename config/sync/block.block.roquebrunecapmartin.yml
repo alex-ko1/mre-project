@@ -1,0 +1,30 @@
+uuid: 129b7f16-e8f8-4a88-a25a-ee712a6b0a87
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:ffc1c4ad-53a9-49be-8b38-1fc591ac4443'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: roquebrunecapmartin
+theme: sub_boot
+region: banner
+weight: -26
+provider: null
+plugin: 'block_content:ffc1c4ad-53a9-49be-8b38-1fc591ac4443'
+settings:
+  id: 'block_content:ffc1c4ad-53a9-49be-8b38-1fc591ac4443'
+  label: 'Roquebrune-Cap-Martin Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/neighbourhoods/roquebrune-cap-martin\r\n/neighbourhoods/rokbryun-kap-marten"

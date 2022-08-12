@@ -1,0 +1,22 @@
+uuid: 55e53d35-7097-4c0c-bbce-e16b128b5375
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: property_items
+label: 'Property items'
+type: 'canonical_entities:node'
+pattern: 'properties/[node:field_sale_rent:entity]/[node:title]'
+selection_criteria:
+  76f86890-bc77-4fdd-8b78-b6a7215cac9e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 76f86890-bc77-4fdd-8b78-b6a7215cac9e
+    context_mapping:
+      node: node
+    bundles:
+      property_item: property_item
+selection_logic: and
+weight: -5
+relationships: {  }

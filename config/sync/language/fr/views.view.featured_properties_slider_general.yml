@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_beds:
+          label: Lits
+        field_baths:
+          label: Thermes
+        field_reference:
+          label: Référence
+        view_node:
+          text: 'Plus d''info'
+      use_more_text: 'Plus d''info'
+      title: 'Propriétés en vedette'

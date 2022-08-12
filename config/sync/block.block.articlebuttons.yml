@@ -1,0 +1,33 @@
+uuid: 2c2ef172-7f76-4c51-bc17-d8740da6ecb8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1bd98d4e-8421-4145-97d8-0a1e66245ad4'
+  module:
+    - block_content
+    - node
+  theme:
+    - sub_boot
+id: articlebuttons
+theme: sub_boot
+region: content
+weight: -19
+provider: null
+plugin: 'block_content:1bd98d4e-8421-4145-97d8-0a1e66245ad4'
+settings:
+  id: 'block_content:1bd98d4e-8421-4145-97d8-0a1e66245ad4'
+  label: Article-buttons
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news_and_articles: news_and_articles

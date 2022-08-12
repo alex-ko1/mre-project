@@ -1,0 +1,18 @@
+uuid: 2494449e-0525-4ac0-80d1-5f69c1c189d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sales
+id: taxonomy_term.sales.name
+field_name: name
+entity_type: taxonomy_term
+bundle: sales
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,33 @@
+uuid: 04354846-8bc5-4225-9296-efa1c281baa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.neighborhoods_and_properties
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - sub_boot
+third_party_settings:
+  block_class:
+    classes: 'wow fadeIn'
+id: views_block__neighborhoods_and_properties_block_1_3
+theme: sub_boot
+region: content
+weight: -20
+provider: null
+plugin: 'views_block:neighborhoods_and_properties-block_1'
+settings:
+  id: 'views_block:neighborhoods_and_properties-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /neighborhoods

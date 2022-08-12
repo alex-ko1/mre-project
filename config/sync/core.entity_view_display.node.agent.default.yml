@@ -1,0 +1,100 @@
+uuid: a91e969f-8114-4ba1-94d3-b5fb51c8b234
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.agent.body
+    - field.field.node.agent.field_agent_photo
+    - field.field.node.agent.field_email
+    - field.field.node.agent.field_telephone
+    - image.style.medium
+    - node.type.agent
+  module:
+    - field_group
+    - image
+    - telephone
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_agent_info:
+      children:
+        - field_agent_photo
+        - field_email
+        - field_telephone
+      label: 'Agent Info'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: agent-info
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_agent_text:
+      children:
+        - body
+      label: 'Agent Text'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: agent-text
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.agent.default
+targetEntityType: node
+bundle: agent
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_agent_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_email:
+    type: email_mailto
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_telephone:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true
+  links: true

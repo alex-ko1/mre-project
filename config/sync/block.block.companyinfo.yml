@@ -1,0 +1,29 @@
+uuid: 4d6d740c-6058-4470-9f57-ff946f0dd0ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.company-info
+  module:
+    - system
+  theme:
+    - sub_boot
+id: companyinfo
+theme: sub_boot
+region: content
+weight: -14
+provider: null
+plugin: 'system_menu_block:company-info'
+settings:
+  id: 'system_menu_block:company-info'
+  label: 'Company info'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact-us

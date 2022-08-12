@@ -1,0 +1,20 @@
+uuid: 1748575a-2b3c-45d3-a48c-29020b022076
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.career_photoes
+  module:
+    - text
+id: taxonomy_term.career_photoes.description
+field_name: description
+entity_type: taxonomy_term
+bundle: career_photoes
+label: Опис
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_agent_property:
+          label: 'Лістинговий агент'
+        nothing:
+          alter:
+            text: '<div class="contact-button">Зв''яжіться зі мною</div>'

@@ -1,0 +1,40 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: Weiterlesen
+        field_beds:
+          label: Betten
+        field_baths:
+          label: Bad
+        field_reference:
+          label: Referenz
+      exposed_form:
+        options:
+          bef:
+            filter:
+              field_property_type_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Alle -| - Eigenschaften -'
+              field_baths_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Alle -| - Bad -'
+              field_beds_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Alle -| - Betten -'
+              field_neighbourhood_target_id:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Alle -| - Nachbarschaft -'
+          submit_button: Bewerben
+      empty:
+        area_text_custom:
+          content: "<blockquote class=\"block-404\">Leider gibt es keine Artikel, die Ihren Anforderungen entsprechen. Bitte versuche es erneut. </blockquote>\r\n<p class=\"block-404\"><a href=\"https://mreproject.dev.drudesk.com/\">Gehen Sie zurück zur Startseite</a></p>"
+      filters:
+        langcode:
+          expose:
+            description: ''

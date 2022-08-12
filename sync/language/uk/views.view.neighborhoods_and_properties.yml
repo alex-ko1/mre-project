@@ -1,0 +1,6 @@
+label: 'Місцевості та власність'
+display:
+  default:
+    display_options:
+      title: 'Місцевості та власність'
+      use_more_text: 'Читати далі'

@@ -1,0 +1,20 @@
+uuid: 250aaebf-bfc5-4a76-a806-14a0e8ca561d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sales
+  module:
+    - path
+id: taxonomy_term.sales.path
+field_name: path
+entity_type: taxonomy_term
+bundle: sales
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

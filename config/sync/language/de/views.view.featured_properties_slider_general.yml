@@ -1,0 +1,14 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_beds:
+          label: Betten
+        field_baths:
+          label: Bad
+        field_reference:
+          label: Referenz
+        view_node:
+          text: 'Mehr sehen'
+      use_more_text: 'Mehr sehen'
+      title: 'Hervorgehobene Eigenschaften'

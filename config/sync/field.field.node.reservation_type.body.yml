@@ -1,0 +1,23 @@
+uuid: 4e1f9f7f-1601-45d1-a675-5849a66c7188
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.reservation_type
+  module:
+    - text
+id: node.reservation_type.body
+field_name: body
+entity_type: node
+bundle: reservation_type
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

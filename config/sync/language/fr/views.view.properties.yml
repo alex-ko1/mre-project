@@ -1,0 +1,46 @@
+display:
+  default:
+    display_options:
+      title: Propriétés
+      fields:
+        field_beds:
+          label: Lits
+        field_baths:
+          label: Thermes
+        field_reference:
+          label: Référence
+        view_node:
+          text: 'Plus d`Info'
+      exposed_form:
+        options:
+          submit_button: Appliquer
+          exposed_sorts_label: 'Trier par'
+          text_input_required: 'Sélectionnez n''importe quel filtre et cliquez sur Appliquer pour voir les résultats'
+          bef:
+            filter:
+              field_property_type_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Tout -| - Propriétés -'
+              field_beds_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Tout -| - Lits -'
+              field_baths_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Tout -| - Thermes -'
+              field_neighbourhood_target_id:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Tout -| - Villes -'
+      empty:
+        area_text_custom:
+          content: "<blockquote class=\"block-404\">Malheureusement, il n'y a pas d'articles qui répondent à vos exigences. Veuillez réessayer.</blockquote>\r\n<p class=\"block-404\"><a href=\"https://mreproject.dev.drudesk.com/\">Retour à la page de démarrage</a></p>"
+      filters:
+        field_beds_value:
+          group_info:
+            description: ''
+        langcode:
+          expose:
+            description: ''

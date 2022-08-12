@@ -1,0 +1,242 @@
+uuid: 66b4d0e6-36da-450f-a8f8-af08413b0934
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.property_item.body
+    - field.field.node.property_item.field_ameities
+    - field.field.node.property_item.field_baths
+    - field.field.node.property_item.field_beds
+    - field.field.node.property_item.field_building_features
+    - field.field.node.property_item.field_coordinates
+    - field.field.node.property_item.field_neighbourhood
+    - field.field.node.property_item.field_price
+    - field.field.node.property_item.field_property_photo
+    - field.field.node.property_item.field_property_type
+    - field.field.node.property_item.field_reference
+    - field.field.node.property_item.field_sale_rent
+    - field.field.node.property_item.field_size
+    - field.field.node.property_item.field_teaser_image
+    - field.field.node.property_item.field_transfer_tax
+    - node.type.property_item
+  module:
+    - field_group
+    - geofield
+    - options
+    - tablefield
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_property_info:
+      children:
+        - group_prope
+        - group_property_row_2
+        - group_propert
+      label: 'Property info'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_prope:
+      children:
+        - field_property_type
+        - field_neighbourhood
+        - field_reference
+      label: 'Property row 1'
+      parent_name: group_property_info
+      region: hidden
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: property-rows-1
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_property_row_2:
+      children:
+        - field_beds
+        - field_size
+        - field_baths
+      label: 'Property row 2'
+      parent_name: group_property_info
+      region: hidden
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_propert:
+      children:
+        - field_price
+        - field_transfer_tax
+      label: 'Property row 3'
+      parent_name: group_property_info
+      region: hidden
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.property_item.default
+targetEntityType: node
+bundle: property_item
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_ameities:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_baths:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_beds:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_building_features:
+    type: tablefield
+    label: above
+    settings:
+      row_header: true
+      column_header: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_coordinates:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_neighbourhood:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_property_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_property_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_reference:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_sale_rent:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_size:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_transfer_tax:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+hidden:
+  field_teaser_image: true
+  langcode: true

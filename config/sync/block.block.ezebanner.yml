@@ -1,0 +1,30 @@
+uuid: dc21a473-090b-42c2-af22-269344d6fc06
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:ff7e1bee-a9fe-4927-b83a-4241a11a5c06'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: ezebanner
+theme: sub_boot
+region: banner
+weight: -23
+provider: null
+plugin: 'block_content:ff7e1bee-a9fe-4927-b83a-4241a11a5c06'
+settings:
+  id: 'block_content:ff7e1bee-a9fe-4927-b83a-4241a11a5c06'
+  label: 'Èze Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/neighbourhoods/eze\r\n/neighbourhoods/ez"

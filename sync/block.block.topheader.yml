@@ -1,0 +1,25 @@
+uuid: 5bcf0526-778b-42b0-9633-c1fe7507332b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:top_header:3870e8d9-12c6-462b-995f-298d4610fcef'
+  module:
+    - block_content
+  theme:
+    - bootstrap5
+id: topheader
+theme: bootstrap5
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:3870e8d9-12c6-462b-995f-298d4610fcef'
+settings:
+  id: 'block_content:3870e8d9-12c6-462b-995f-298d4610fcef'
+  label: 'Top Header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

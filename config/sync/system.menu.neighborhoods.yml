@@ -1,0 +1,8 @@
+uuid: 2efad2b5-ad2c-4eac-90bc-b78da7bf0ccd
+langcode: en
+status: true
+dependencies: {  }
+id: neighborhoods
+label: Neighborhoods
+description: ''
+locked: false

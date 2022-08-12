@@ -1,0 +1,22 @@
+uuid: 864154cd-baad-4de5-a57a-bb8723a3d5b8
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.career_photoes
+id: taxonomy_term.career_photoes.status
+field_name: status
+entity_type: taxonomy_term
+bundle: career_photoes
+label: Опубліковано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Увімкнено
+  off_label: Вимкнено
+field_type: boolean

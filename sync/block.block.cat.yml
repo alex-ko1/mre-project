@@ -1,0 +1,30 @@
+uuid: 7dc1948d-6166-4d25-8912-7058bf9f5b22
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6cf7e1b9-92b7-4352-936d-ed7e29be0b46'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap5
+id: cat
+theme: bootstrap5
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:6cf7e1b9-92b7-4352-936d-ed7e29be0b46'
+settings:
+  id: 'block_content:6cf7e1b9-92b7-4352-936d-ed7e29be0b46'
+  label: CAT
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/services\r\n/company/career"

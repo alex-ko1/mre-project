@@ -1,0 +1,16 @@
+elements: |
+  sign_up_to_our_newsletter:
+    '#title': 'Підпишіться на нашу розсилку'
+    '#placeholder': 'Введіть email'
+    '#required_error': 'Це поле є обов''язковим'
+  i_agree_that_marks_real_estate_are_allowed_to_use_the_informatio:
+    '#title': 'Я погоджуюся з тим, що Marks Real Estate має право використовувати інформацію, надану в цій формі, для надсилання мені інформаційних бюлетенів.'
+    '#required_error': 'Це поле є обов''язковим'
+handlers:
+  email_2:
+    settings:
+      body: "<strong>From:</strong>&nbsp;[site:mail]<br />\r\nДякую за ваш електронний лист! Ми зв&#39;яжемося з вами найближчим часом! :)"
+      subject: 'Marks Real Estate'
+settings:
+  confirmation_title: Успіх!
+  confirmation_message: 'Ви успішно підписалися на нашу розсилку!'

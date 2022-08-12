@@ -1,0 +1,11 @@
+uuid: c04c35f0-632a-4368-8073-1313e4264295
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event
+id: state.state
+target_entity_type_id: state
+target_bundle: state
+default_langcode: site_default
+language_alterable: false

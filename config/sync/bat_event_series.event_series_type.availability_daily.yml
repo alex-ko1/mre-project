@@ -1,0 +1,10 @@
+uuid: db9e5c72-b54a-4ace-a692-2dda9f8c62be
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pv1GaYk6xDEROw6NDvemeB22QG1kfdVx52gVq0f1gaQ
+name: 'Availability Daily'
+type: availability_daily
+event_granularity: bat_daily
+target_event_type: availability_daily

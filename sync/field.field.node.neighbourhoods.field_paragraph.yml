@@ -1,0 +1,25 @@
+uuid: 38ff8b12-180d-4e52-9fde-df95e0519298
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.neighbourhoods
+  module:
+    - entity_reference_revisions
+id: node.neighbourhoods.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: neighbourhoods
+label: Paragraph
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+field_type: entity_reference_revisions

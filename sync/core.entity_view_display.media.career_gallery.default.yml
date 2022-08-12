@@ -1,0 +1,32 @@
+uuid: 6d0d19b6-721e-482d-9880-e979eb368d7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.career_gallery.field_media_image_1
+    - image.style.large
+    - media.type.career_gallery
+  module:
+    - image
+id: media.career_gallery.default
+targetEntityType: media
+bundle: career_gallery
+mode: default
+content:
+  field_media_image_1:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

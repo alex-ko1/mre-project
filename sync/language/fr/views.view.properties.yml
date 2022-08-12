@@ -1,0 +1,18 @@
+display:
+  default:
+    display_options:
+      title: Propriétés
+      fields:
+        field_beds:
+          label: Lits
+        field_baths:
+          label: Thermes
+        field_reference:
+          label: Référence
+      filters:
+        field_beds_value:
+          group_info:
+            description: ''
+        langcode:
+          expose:
+            description: ''

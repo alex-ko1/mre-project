@@ -1,0 +1,23 @@
+uuid: cd7a011c-6fa4-4a2c-9edd-cfa89ffb209e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.agent
+  module:
+    - text
+id: node.agent.body
+field_name: body
+entity_type: node
+bundle: agent
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,26 @@
+uuid: 139ccfb0-cb4c-453f-b416-05b60fc6bbf6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sub_boot
+_core:
+  default_config_hash: n1-YEZsve6s6bqTMKzk3apSO13K1I4Q_zVgj5SbmrQg
+id: sub_boot_content
+theme: sub_boot
+region: content
+weight: -31
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

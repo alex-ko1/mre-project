@@ -1,0 +1,25 @@
+uuid: a094915f-0c39-454c-8677-aa56422ad68f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.error_page.body
+    - node.type.error_page
+  module:
+    - text
+    - user
+id: node.error_page.default
+targetEntityType: node
+bundle: error_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

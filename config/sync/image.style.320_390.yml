@@ -1,0 +1,15 @@
+uuid: 06765254-03b8-437f-a04f-64e91f47c2ab
+langcode: en
+status: true
+dependencies: {  }
+name: '320_390'
+label: 320/390
+effects:
+  ba9e7b75-7424-472a-a95f-686cc113c3fa:
+    uuid: ba9e7b75-7424-472a-a95f-686cc113c3fa
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 390
+      anchor: center-center

@@ -1,0 +1,13 @@
+uuid: cd74f3b8-ede6-4ecb-85e0-d922a56f3a33
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_unit
+_core:
+  default_config_hash: 7FhLQ2tC0mBYBHobJVVcxqueZaSKgEaknqsHYw1Pj8o
+id: unit_unpublish_action
+label: 'Unpublish unit'
+type: bat_unit
+plugin: unit_unpublish_action
+configuration: {  }

@@ -1,0 +1,30 @@
+uuid: dd6076f3-af34-4eb7-af3a-0ed94e1f1021
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:0cfebbf6-8f77-4c96-8960-d411eb6b920a'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: beaulieusurmer
+theme: sub_boot
+region: banner
+weight: -36
+provider: null
+plugin: 'block_content:0cfebbf6-8f77-4c96-8960-d411eb6b920a'
+settings:
+  id: 'block_content:0cfebbf6-8f77-4c96-8960-d411eb6b920a'
+  label: 'Beaulieu-sur-Mer Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/neighbourhoods/beaulieu-sur-mer\r\n/neighbourhoods/bolye-syur-mer"

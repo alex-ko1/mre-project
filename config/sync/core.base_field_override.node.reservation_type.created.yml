@@ -1,0 +1,18 @@
+uuid: 864feec0-dd75-478d-a5cc-719796269794
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reservation_type
+id: node.reservation_type.created
+field_name: created
+entity_type: node
+bundle: reservation_type
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,20 @@
+uuid: 53888ae4-50ea-4932-b503-9e4223ff04e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.operation_with_property
+  module:
+    - path
+id: taxonomy_term.operation_with_property.path
+field_name: path
+entity_type: taxonomy_term
+bundle: operation_with_property
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

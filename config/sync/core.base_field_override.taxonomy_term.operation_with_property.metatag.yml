@@ -1,0 +1,18 @@
+uuid: 435fc0d2-2d6f-4488-9952-a6bfa534188a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.operation_with_property
+id: taxonomy_term.operation_with_property.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: operation_with_property
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

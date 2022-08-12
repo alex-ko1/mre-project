@@ -1,0 +1,30 @@
+uuid: 83af9405-6209-4f0b-869d-cdb6e4bb8e64
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:13ecc6de-1192-4a91-b985-68d1441c2992'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: villefranchesurmer
+theme: sub_boot
+region: banner
+weight: -24
+provider: null
+plugin: 'block_content:13ecc6de-1192-4a91-b985-68d1441c2992'
+settings:
+  id: 'block_content:13ecc6de-1192-4a91-b985-68d1441c2992'
+  label: 'Villefranche-sur-Mer Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/neighbourhoods/villefranche-sur-mer\r\n/neighbourhoods/vilfransh-syur-mer"

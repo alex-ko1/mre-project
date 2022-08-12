@@ -1,0 +1,18 @@
+uuid: 3ef56b67-ac7f-4904-a13f-b5439acd29d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.neighbourhood
+id: taxonomy_term.neighbourhood.name
+field_name: name
+entity_type: taxonomy_term
+bundle: neighbourhood
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

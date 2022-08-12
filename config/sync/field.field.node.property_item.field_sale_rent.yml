@@ -1,0 +1,29 @@
+uuid: 6297a68f-a41c-43ab-86dd-0abeaf5d4a68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sale_rent
+    - node.type.property_item
+    - taxonomy.vocabulary.operation_with_property
+id: node.property_item.field_sale_rent
+field_name: field_sale_rent
+entity_type: node
+bundle: property_item
+label: Sale/Rent
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      operation_with_property: operation_with_property
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

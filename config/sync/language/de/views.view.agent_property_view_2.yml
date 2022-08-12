@@ -1,0 +1,12 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_agent_property:
+          label: Listing-Agent
+        nothing:
+          alter:
+            text: '<div class="contact-button">Kontaktiere mich</div>'
+    display_title: Defaul
+  block_1:
+    display_title: Bloc

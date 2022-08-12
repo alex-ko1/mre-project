@@ -1,0 +1,24 @@
+uuid: 55e8788b-186a-4bc3-a4d1-c5aa65679494
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: general
+label: 'General patterns'
+type: 'canonical_entities:node'
+pattern: '[node:content-type:name]/[node:title]'
+selection_criteria:
+  a2511386-d258-42c1-bb4a-ce0554e67f61:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a2511386-d258-42c1-bb4a-ce0554e67f61
+    context_mapping:
+      node: node
+    bundles:
+      agent: agent
+      neighbourhoods: neighbourhoods
+      services: services
+selection_logic: and
+weight: -5
+relationships: {  }

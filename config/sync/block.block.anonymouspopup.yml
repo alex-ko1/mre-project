@@ -1,0 +1,37 @@
+uuid: f3187aca-66fb-4b2c-87a1-547f169fb244
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b5a4afe1-9bc4-4093-9505-164aabd55b66'
+  module:
+    - block_class
+    - block_content
+    - node
+  theme:
+    - sub_boot
+third_party_settings:
+  block_class:
+    classes: anonymous-popup
+id: anonymouspopup
+theme: sub_boot
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:b5a4afe1-9bc4-4093-9505-164aabd55b66'
+settings:
+  id: 'block_content:b5a4afe1-9bc4-4093-9505-164aabd55b66'
+  label: 'Anonymous popup'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      property_item: property_item

@@ -1,0 +1,49 @@
+display:
+  default:
+    display_options:
+      title: Immobilien
+      fields:
+        field_beds:
+          label: Betten
+        field_baths:
+          label: Bad
+        field_reference:
+          label: Referenz
+        view_node:
+          text: Weiterlesen
+      exposed_form:
+        options:
+          submit_button: Bewerben
+          exposed_sorts_label: 'Sortieren nach'
+          text_input_required: 'Wählen Sie einen beliebigen Filter aus und klicken Sie auf Anwenden, um die Ergebnisse anzuzeigen'
+          bef:
+            filter:
+              field_property_type_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Alle -| - Eigenschaften -'
+              field_beds_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Alle -| - Betten -'
+              field_baths_value:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Alle -| - Bad -'
+              field_neighbourhood_target_id:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: '- Alle -| - Nachbarschaft -'
+      filters:
+        field_price_value:
+          expose:
+            placeholder: Preis
+        field_beds_value:
+          group_info:
+            description: ''
+        langcode:
+          expose:
+            description: ''
+      empty:
+        area_text_custom:
+          content: "<blockquote class=\"block-404\">Leider gibt es keine Artikel, die Ihren Anforderungen entsprechen. Bitte versuche es erneut.</blockquote>\r\n<p class=\"block-404\"><a href=\"https://mreproject.dev.drudesk.com/\">Gehen Sie zurück zur Startseite</a></p>"

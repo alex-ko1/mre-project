@@ -1,0 +1,21 @@
+uuid: d42a8692-3141-4bb6-b9a0-4b9cab6a3a5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event.event_type.availability_daily
+    - field.storage.bat_event.event_dates
+  module:
+    - datetime_range
+id: bat_event.availability_daily.event_dates
+field_name: event_dates
+entity_type: bat_event
+bundle: availability_daily
+label: 'Event Dates'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

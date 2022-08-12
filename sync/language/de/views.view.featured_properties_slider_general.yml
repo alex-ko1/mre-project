@@ -1,0 +1,11 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_beds:
+          label: Betten
+        field_baths:
+          label: Bad
+        field_reference:
+          label: Referenz
+      use_more_text: 'Mehr sehen'

@@ -1,0 +1,22 @@
+uuid: 0fdca3df-4b22-412c-a113-a4ebb0295789
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.neighbourhood
+id: taxonomy_term.neighbourhood.status
+field_name: status
+entity_type: taxonomy_term
+bundle: neighbourhood
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

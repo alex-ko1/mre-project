@@ -1,0 +1,16 @@
+elements: |
+  sign_up_to_our_newsletter:
+    '#title': 'Abonnez-vous à notre lettre d''information'
+    '#placeholder': 'Entrer votre Email'
+    '#required_error': 'Ce champ est requis'
+  i_agree_that_marks_real_estate_are_allowed_to_use_the_informatio:
+    '#title': 'J''accepte que Marks Real Estate soit autorisé à utiliser les informations fournies dans ce formulaire pour m''envoyer des newsletters.'
+    '#required_error': 'Ce champ est requis'
+handlers:
+  email_2:
+    settings:
+      body: "<strong>From:</strong>&nbsp;[site:mail]<br />\r\nMerci pour ton mail! Nous reviendrons vers vous bient&ocirc;t! :)"
+      subject: 'Marks Real Estate'
+settings:
+  confirmation_title: 'Tu l''as eu!'
+  confirmation_message: 'Vous vous &ecirc;tes abonn&eacute; avec succ&egrave;s &agrave; nos newsletters!'

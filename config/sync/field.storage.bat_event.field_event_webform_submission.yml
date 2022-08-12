@@ -1,0 +1,20 @@
+uuid: 8d11c69b-0485-4c55-8e37-b3010ef22a9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - bat_event
+    - webform
+id: bat_event.field_event_webform_submission
+field_name: field_event_webform_submission
+entity_type: bat_event
+type: entity_reference
+settings:
+  target_type: webform_submission
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

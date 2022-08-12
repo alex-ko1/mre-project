@@ -1,0 +1,26 @@
+settings:
+  allowed_values:
+    0:
+      label: Climatisation
+    1:
+      label: 'Double vitrage'
+    2:
+      label: 'Store de fenêtre'
+    3:
+      label: 'Stores électriques'
+    4:
+      label: 'Lumière d''extérieure'
+    5:
+      label: Interphone
+    6:
+      label: 'Volets électriques'
+    7:
+      label: 'Fenêtres coulissantes'
+    8:
+      label: 'Fibre optique'
+    9:
+      label: 'Système d''alarme'
+    11:
+      label: 'Portail électrique'
+    12:
+      label: Piscine

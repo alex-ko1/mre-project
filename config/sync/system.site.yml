@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 9283224e-32e8-4817-ae28-db89dbefc3b2
+name: mreproject
+mail: mreproject.v3@gmail.com
+slogan: ''
+page:
+  403: /node/55
+  404: /node/56
+  front: /node/118
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

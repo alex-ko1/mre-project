@@ -1,0 +1,25 @@
+elements: |
+  name:
+    '#title': Nom
+    '#placeholder': Nom
+    '#required_error': 'S''il vous plaît entrez votre nom'
+  last_name:
+    '#title': 'Nom de famille'
+    '#placeholder': 'Nom de famille'
+  email_addres:
+    '#placeholder': 'Email Adresse'
+    '#required_error': 'S''il vous plaît, entrez votre e-mail'
+  phone_number:
+    '#title': 'Numéro de téléphone'
+    '#required_error': 'Veuillez entrer votre numéro de téléphone'
+  message:
+    '#required_error': 'Laisser un message'
+  actions:
+    '#submit__label': Envoyer
+settings:
+  confirmation_title: 'Tu l''as eu!'
+  confirmation_message: 'Nous avons bien re&ccedil;u votre demande et nous vous r&eacute;pondrons dans les 48 heures!'
+handlers:
+  email_v2:
+    settings:
+      body: "<strong>From:</strong>&nbsp;[site:mail]<br />\r\nMerci pour ton mail! Nous reviendrons vers vous bient&ocirc;t! :)"

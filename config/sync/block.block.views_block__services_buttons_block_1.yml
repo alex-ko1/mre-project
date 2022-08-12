@@ -1,0 +1,29 @@
+uuid: c37f3590-46dd-4d0e-95c5-d6a158b84ee2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.services_buttons
+  module:
+    - system
+    - views
+  theme:
+    - sub_boot
+id: views_block__services_buttons_block_1
+theme: sub_boot
+region: content
+weight: -25
+provider: null
+plugin: 'views_block:services_buttons-block_1'
+settings:
+  id: 'views_block:services_buttons-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /services

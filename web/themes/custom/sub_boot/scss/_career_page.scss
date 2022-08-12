@@ -1,0 +1,398 @@
+.career-page {
+    #block-careerbanner {
+        .field--type-text-with-summary {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .region-content {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+    @include prebanner;
+    h1.page-title {
+        display: none;
+    }
+    .field--type-text-with-summary {
+        position: relative;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        max-width: 1000px;
+        margin-bottom: 85px;
+        a {
+            color: $black;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a[href^="mailto:marks@marks.fr"] {
+            text-decoration: underline;
+        }
+        &::after {
+            content: '';
+            height: 130%;
+            width: 120%;
+            background-color: rgba(246, 246, 246, 1);
+            position: absolute;
+            top: -20%;
+            left: 40%;
+            z-index: -1;
+            @media(max-width: 768px) {
+                height: 105%;
+                top: -5%;
+            }
+            @media(max-width: 425px) {
+                display: none;
+            }
+        }
+        @media(max-width: 768px) {
+            text-align: justify;
+        }
+    }
+    .field--name-field-career-image {
+        display: flex;
+        flex-wrap: wrap;
+        @media(max-width: 1199px) {
+            margin-top: 260px;
+            justify-content: space-around;
+        }
+        @media(max-width: 1050px) {
+            gap: 15px;
+            justify-content: center;
+        }
+        @media(max-width: 950px) {
+            gap: 25px;
+            margin-top: 250px;
+        }
+        @media(max-width: 650px) {
+            gap: 15px;
+        }
+        @media(max-width: 436px) {
+            gap: 10px;
+        }
+        @media(max-width: 335px) {
+            gap: 5px;
+        }
+        .field__item {
+            img {
+                margin-bottom: 20px;
+            }
+            @media(max-width: 436px) {
+                img {
+                    height: 150px !important;
+                }
+            }
+        }
+        .field__item:first-child {
+            width: 100%;
+            img {
+                width: 750px !important;
+                height: 340px !important;
+            }
+            @media(max-width: 1199px) {
+                display: flex;
+                justify-content: center;
+                width: 47% !important;
+            }   
+            @media(max-width: 1050px) {
+                width: 100% !important;
+                img {
+                    margin-bottom: 0;                    
+                }
+            }
+            @media(max-width: 699px) {
+                img {
+                    height: auto !important;
+                }
+            }
+        }
+        .field__item:nth-child(2) {
+            width: 100%;
+            img {
+                width: 750px !important;
+                height: 340px !important;
+            }
+            @media(max-width: 1199px) {
+                display: flex;
+                justify-content: center;
+                width: 47% !important;
+            }
+            @media(max-width: 1050px) {
+                order: 5;
+                width: 100% !important;
+            }
+            @media(max-width: 699px) {
+                img {
+                    height: auto !important;
+                }
+            }
+        }
+        .field__item:nth-child(3) {
+            img {
+                width: 300px !important;
+                height: 400px !important;
+                margin-right: 20px;
+            }
+            @media(max-width: 1199px) {
+                display: flex;
+                justify-content: center;
+                img {
+                    margin: 0;
+                }
+            }
+            @media(max-width: 1050px) {
+                width: 30% !important;
+                img {
+                    height: 300px !important;
+                }
+            }
+            @media(max-width: 603px) {
+                img {
+                    height: 200px !important;
+                }
+            }
+            @media(max-width: 436px) {
+                img {
+                    height: 150px !important;
+                }
+            }
+        }
+        .field__item:nth-child(4) {
+            img {
+                width: 430px !important;
+                height: 400px !important;
+                margin-right: 20px;
+            }
+            @media(max-width: 1199px) {
+                display: flex;
+                justify-content: center;
+                img {
+                    margin: 0;
+                }
+            }
+            @media(max-width: 1050px) {
+                width: 30% !important;
+                img {
+                    height: 300px !important;
+                }
+            }
+            @media(max-width: 603px) {
+                img {
+                    height: 200px !important;
+                }
+            }
+            @media(max-width: 436px) {
+                img {
+                    height: 150px !important;
+                }
+            }
+        }
+        .field__item:nth-child(5) {
+            img {
+                width: 400px !important;
+                height: 610px !important;
+                margin-top: -210px;
+            }
+            @media(max-width: 1199px) {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: auto !important;
+                    height: 400px !important;
+                    margin: 0;
+                }
+            }
+            @media(max-width: 1050px) {
+                img {
+                    height: 300px !important;
+                }
+            }
+            @media(max-width: 603px) {
+                img {
+                    height: 200px !important;
+                }
+            }
+            @media(max-width: 436px) {
+                img {
+                    height: 150px !important;
+                }
+            }
+        }
+    }
+    .node__content {
+        margin-bottom: 40px;
+    }
+    #block-cat-2 {
+        @include CAT;
+    }
+    #block-catcontact {
+        @include CAT;
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        right: 0;
+        top: 15.5%;
+        margin-right: 15px;
+        z-index: 10;
+        .field--type-text-with-summary {
+            text-align: center;
+            &::after {
+                display: none;
+            }
+        }
+        @media(max-width: 1199px) {
+            width: 100%;
+            height: auto;
+            top: 170px;
+            padding: 10px;
+            margin-right: 0px;
+            .field--name-body {
+                margin: 0 auto;
+                margin-bottom: 10px;                
+            }
+        }
+        @media(max-width: 726px) {
+            top: 200px;
+            h3 {
+                font-size: 40px;
+            }
+        }
+        @media(max-width: 602px) {
+            top: 220px;
+        }
+        @media(max-width: 573px) {
+            top: 245px;
+        }
+        @media(max-width: 375px) {
+            top: 265px;
+        }
+        @media(max-width: 325px) {
+            top: 290px;
+        }
+    }
+    #block-careerbanner {
+        @include banner;
+        .field--type-text-with-summary {
+            &::after {
+                content: none;
+            }
+        }
+    }
+    .container-fluid {
+        overflow: hidden;
+    }
+    .field--name-body {
+        @media (max-width: 600px) {
+            font-size: 0.9em;
+        }
+        @media (max-width: 400px) {
+            font-size: 0.8em;
+        }
+    }
+    #block-vacancies {
+        .field--type-text-with-summary {
+            max-width: none;
+            margin: 0px;
+            .ficWEO {
+                margin: 0;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        @media (max-width: 816px) {
+            display: none;
+        }
+    }
+    #block-vacanciessidebar {
+        .field--type-text-with-summary {
+            max-width: none;
+            margin: 0px;
+            &::after {
+                display: none;
+            }
+        }
+        @media (min-width: 816px) {
+            display: none;
+        }
+    }
+}
+
+html[lang="uk"] {
+    .career-page {
+        #block-catcontact {
+            @media(max-width: 924px) {
+                top: 195px;
+            }
+            @media(max-width: 785px) {
+                top: 220px;
+            }
+            @media(max-width: 680px) {
+                top: 220px;
+            }
+            @media(max-width: 534px) {
+                top: 260px;
+            }
+            @media(max-width: 425px) {
+                top: 240px;
+            }
+            @media(max-width: 336px) {
+                top: 265px;
+            }
+        }
+    }
+}
+html[lang="de"] {
+    .career-page {
+        #block-catcontact {
+            @media(max-width: 811px) {
+                top: 190px;
+            }
+            @media(max-width: 681px) {
+                top: 240px;
+            }
+            @media(max-width: 469px) {
+                top: 270px;
+            }
+            @media(max-width: 420px) {
+                top: 290px;
+            }
+            @media(max-width: 400px) {
+                top: 296px;
+            }
+            @media(max-width: 377px) {
+                top: 300px;
+            }
+            @media(max-width: 350px) {
+                top: 330px;
+            }
+            @media(max-width: 329px) {
+                top: 350px;
+            }
+        }
+    }
+}
+html[lang="fr"] {
+    .career-page {
+        #block-catcontact {
+            @media(max-width: 974px) {
+                top: 190px;
+            }
+            @media(max-width: 718px) {
+                top: 225px;
+            }
+            @media(max-width: 481px) {
+                top: 255px;
+            }
+            @media(max-width: 438px) {
+                top: 275px;
+            }
+            @media(max-width: 344px) {
+                top: 310px;
+            }
+        }
+    }
+}

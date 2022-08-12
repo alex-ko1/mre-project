@@ -1,0 +1,17 @@
+uuid: 284cf1f9-c45b-408e-87ab-3eaac51bc8e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Neighbourhoods
+type: neighbourhoods
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

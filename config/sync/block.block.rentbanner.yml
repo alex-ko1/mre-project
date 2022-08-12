@@ -1,0 +1,30 @@
+uuid: e8066845-d159-4960-8e8b-272113f7a359
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:76fdea0f-8a2b-4770-aeb6-8edc832e9cac'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: rentbanner
+theme: sub_boot
+region: banner
+weight: -27
+provider: null
+plugin: 'block_content:76fdea0f-8a2b-4770-aeb6-8edc832e9cac'
+settings:
+  id: 'block_content:76fdea0f-8a2b-4770-aeb6-8edc832e9cac'
+  label: 'Rent Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /properties/rent

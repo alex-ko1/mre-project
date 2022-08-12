@@ -1,0 +1,34 @@
+.block-system-breadcrumb-block {
+    @include center;
+    padding: 4em 0 2em;
+    ol.breadcrumb {
+        .breadcrumb-item {
+            &::before {
+                color: #9E9E9E;
+            }
+            a {
+                color: #9E9E9E;
+                text-decoration: none;
+            }
+        }
+        .breadcrumb-item:last-child{
+            color: $darkgray;
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 3em 0 1em;
+        font-size: 0.8em;
+    }
+    @media (max-width: 568px) {
+        padding: 2.5em 0 0.5em;
+        font-size: 0.75em;
+    }
+}
+
+#backtotop {
+    @media (max-width: 768px) {
+        background-size: 40px 40px;
+        bottom: 0;
+        right: 0;
+    }
+}

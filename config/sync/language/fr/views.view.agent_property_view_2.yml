@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_agent_property:
+          label: 'Agent inscripteur'
+        nothing:
+          alter:
+            text: '<div class="contact-button">Contactez moi</div>'

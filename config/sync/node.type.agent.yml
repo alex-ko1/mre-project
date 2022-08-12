@@ -1,0 +1,17 @@
+uuid: 9a116e45-457e-43f3-a785-6ef64f5d936a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Agent
+type: agent
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

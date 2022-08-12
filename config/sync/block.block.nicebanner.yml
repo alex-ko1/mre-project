@@ -1,0 +1,30 @@
+uuid: e286ac5c-1bc2-4282-8fbd-52d875961228
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_image_:471f9096-41e8-4098-adca-f6954687cb9e'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: nicebanner
+theme: sub_boot
+region: banner
+weight: -30
+provider: null
+plugin: 'block_content:471f9096-41e8-4098-adca-f6954687cb9e'
+settings:
+  id: 'block_content:471f9096-41e8-4098-adca-f6954687cb9e'
+  label: 'Nice Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/neighbourhoods/city-nice\r\n/neighbourhoods/nitstsa"

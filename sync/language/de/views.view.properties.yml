@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      title: Immobilien
+      fields:
+        field_beds:
+          label: Betten
+        field_baths:
+          label: Bad
+        field_reference:
+          label: Referenz
+      filters:
+        field_beds_value:
+          group_info:
+            description: ''
+        langcode:
+          expose:
+            description: ''
+      exposed_form:
+        options:
+          submit_button: Appliquer

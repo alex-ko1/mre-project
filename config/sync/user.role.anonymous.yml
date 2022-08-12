@@ -1,0 +1,44 @@
+uuid: df0dc276-2d56-42fa-bb02-786b15af4c29
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - bat_event
+    - bee
+    - comment
+    - contact
+    - filter
+    - fivestar
+    - flag
+    - media
+    - paragraphs_type_permissions
+    - search
+    - smtp
+    - system
+    - update
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'administer smtp module'
+  - 'create bee reservation'
+  - 'flag bookmark'
+  - 'rate content'
+  - 'search content'
+  - 'unflag bookmark'
+  - 'use text format restricted_html'
+  - 'view calendar data for any availability_daily event'
+  - 'view calendar data for any availability_hourly event'
+  - 'view media'
+  - 'view paragraph content paragraph_image'
+  - 'view paragraph content text_block'
+  - 'view update notifications'
+  - 'view user email addresses'

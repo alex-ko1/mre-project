@@ -1,0 +1,34 @@
+uuid: b3a844b0-4e78-487e-b008-13c6c888fa03
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6cf7e1b9-92b7-4352-936d-ed7e29be0b46'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - sub_boot
+third_party_settings:
+  block_class:
+    classes: 'wow slideInLeft'
+id: cat_2
+theme: sub_boot
+region: content
+weight: -29
+provider: null
+plugin: 'block_content:6cf7e1b9-92b7-4352-936d-ed7e29be0b46'
+settings:
+  id: 'block_content:6cf7e1b9-92b7-4352-936d-ed7e29be0b46'
+  label: CAT
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/services\r\n"

@@ -1,0 +1,18 @@
+uuid: a011a5e4-e6e8-48dc-bc79-91e7d3a511a6
+langcode: uk
+status: true
+dependencies:
+  config:
+    - media.type.career_gallery
+id: media.career_gallery.created
+field_name: created
+entity_type: media
+bundle: career_gallery
+label: Створено
+description: 'Час створення медіа-об''єкта.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

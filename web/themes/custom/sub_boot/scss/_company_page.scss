@@ -1,0 +1,613 @@
+.company-page {
+    @include prebanner;
+        h1.page-title {
+            display: none;
+        }
+    #block-companybanner {
+      @include banner;
+        .field--type-text-with-summary {
+            width: 100%;
+            p {
+                font-weight: 300;
+                font-size: 1.5em;
+                line-height: 19px;
+                letter-spacing: 14px;
+                padding-bottom: 40px;
+                @media (max-width:576px) {
+                    padding-bottom: 0;
+                }
+                @media (max-width:450px) {
+                    letter-spacing: 5px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    h2 {
+        display: flex;
+        justify-content: end;
+        font-size: 54px;
+        font-weight: 500;
+        margin-bottom: 90px;
+    }
+    .field--name-field-paragraph>.field__item:first-child {
+        position: relative;
+        z-index: 2;
+        &::before {
+            content: '';
+            height: 150%;
+            width: 105%;
+            right: -30%;
+            top: -40px;
+            background-color: rgba(246, 246, 246, 1);
+            position: absolute;
+            z-index: -1;
+            @media(max-width: 850px) {
+                height: 110%;
+                width: 105%;
+                right: -30%;
+                top: -10px;
+            }
+            @media(max-width: 375px) {
+                display: none;
+            }
+        }
+        .paragraph--view-mode--default {
+            margin-bottom: 90px;
+            @media(max-width: 425px) {
+                text-align: justify;
+            }
+            @media(max-width: 375px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    blockquote.company-blockquote {
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.04em;
+        text-align: right;
+        @media(max-width: 375px){
+            font-size: 16px;
+        }
+    }
+    .field--name-field-paragraph {
+        .field__item:nth-child(2) {
+            h2 {
+                @media(max-width: 1190px) {
+                    padding-top: 0px;
+                    margin-bottom: 0px;
+                }
+                @media(max-width: 375px) {
+                    font-size: 40px;
+                }
+            }
+        }
+        .field__item:nth-child(3) {
+            p.author {
+                font-weight: 700;
+                text-align: end;
+            }
+            width: 62%;
+            float: left;
+            @media(max-width: 1190px) {
+                clear: both;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+        .field__item:nth-child(4) {
+            display: flex;
+            justify-content: end;
+            margin-top: -50px;
+            margin-bottom: 90px;
+            img {
+                filter: drop-shadow(-30px 30px 0px $whitesmoke);
+            }
+            @media(max-width: 1190px) {
+                display: block;
+                justify-content: center;
+                .field--name-field-paragraph-image {
+                    text-align: center;
+                }
+            }
+            @media(max-width: 425px) {
+                img {
+                    filter: drop-shadow(-15px 20px 0px  $whitesmoke);
+                }
+            }
+            @media(max-width: 375px) {
+                img {
+                    max-width: 80%;
+                }
+            }
+        }
+        .field__item:nth-child(5) {
+            display: flex;
+            justify-content: end;
+            background: linear-gradient(90deg, $gray 0%, $white 0.01%, #F4F4F4 29.35%, rgba(248, 248, 248, 0.826522) 69.59%, $whitesmoke 100%);
+            .paragraph--view-mode--default {
+                width: 70%;
+            }
+            @media(max-width: 1190px) {
+                display: block;
+                justify-content: center;
+            }
+            @media(max-width: 1190px) {
+                .paragraph--view-mode--default {
+                    width: 100%;
+                    text-align: justify;
+                }
+            }
+            @media(max-width: 425px) {
+                background: linear-gradient(90deg, $white 0.01%, #F4F4F4 29.35%, rgba(248, 248, 248, 0.826522) 69.59%, $whitesmoke 100%);
+                h5 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // Agents view + popup
+    .view-content {
+        overflow: hidden;
+    }
+    @media(max-width: 850px) {
+        display: flex;
+        .spv-popup-wrapper {
+            margin: 0 auto;
+        }
+    }
+    .views-row.row-1 {
+        gap: 10px;
+        display: flex;
+        @media(max-width: 850px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 30px;
+            .col-1, .col-2, .col-3, .col-4 {
+                width: 100% !important;
+            }
+            .col-1, .col-3 {
+                text-align: right;
+            }
+            .col-2, .col-4 {
+                text-align: left;
+            }
+        }
+        @media(max-width: 320px) {
+            grid-template-columns: 1fr;
+        }
+        .spv-popup-link {
+            a {
+                display: flex;
+                align-items: center;
+                background: hsla(0,0%,100%,.6);
+                bottom: 0;
+                color: $black;
+                font-size: 24px;
+                font-weight: 500;
+                height: 49px;
+                justify-content: center;
+                letter-spacing: .04em;
+                line-height: 36px;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                text-decoration: none;
+                @media(max-width: 1020px) {
+                    font-size: 18px;
+                }
+                @media(max-width: 850px) {
+                    font-size: 24px;
+                }
+                @media(max-width: 435px) {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+            a[href^="/uk/agent/daniel-isaksson"] {
+                padding-left: 20px;
+                padding-right: 30px;
+                line-height: 24px;
+            }
+            a[href^="/uk/agent/indira-laushevich"] {
+                line-height: 24px;
+            }
+            &:hover{
+                filter: brightness(0.5);
+                transition: all 1s;
+            }
+        }
+    }
+    .region-content {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+    .spv-bottom-popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .spv-popup-content {
+        position: fixed !important;
+        width: 1150px;
+        height: 545px;
+        padding: 30px;
+        background-image: url(../images/webform-letter.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-position-y: -20px;
+        background-position-x: -20px;
+        @media(max-width: 1290px) {
+            width: 840px;
+            height: auto;
+        }
+        @media(max-width: 1023px) {
+            width: 600px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            max-height: 80vh;
+            .spv_close {
+                top: 2px;
+                right: 2px;
+            }
+        }
+        @media(max-width: 767px) {
+            width: 450px;
+            padding-top: 10px;
+        }
+        @media(max-width: 470px) {
+            width: 290px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .img-fluid {
+            width: 320px !important;
+            height: 390px !important;
+            right: 0;
+            margin-right: 0px;
+            margin-left: 750px;
+            margin-top: -490px;
+        }
+        img[alt^="Maria Piault"] {
+            margin-top: -470px;
+            @media(max-width: 1290px) {
+                margin-left: 430px;
+                margin-top: -510px;
+            }
+            @media(max-width: 1023px) {
+                display: none;
+            }
+        }
+        img[alt^="Daniel Isaksson"] {
+            margin-top: -470px;
+            @media(max-width: 1290px) {
+                margin-left: 459px;
+                margin-top: -421px;
+                width: 300px !important;
+                height: 340px !important;
+            }
+            @media(max-width: 1023px) {
+                display: none;
+            }
+        }
+        img[alt^="Elena Tkachuk"] {
+            margin-top: -470px;
+            @media(max-width: 1290px) {
+                margin-left: 430px;
+                margin-top: -447px;
+                width: 300px !important;
+                height: 340px !important;
+            }
+            @media(max-width: 1023px) {
+                display: none;
+            }
+        }
+        img[alt^="Indira Lausevic"] {
+            @media(max-width: 1290px) {
+                margin-left: 440px;
+                margin-top: -529px;
+            }
+            @media(max-width: 1023px) {
+                display: none;
+            }
+        }
+        .spv-inside-popup {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                display: block;
+                font-weight: 500;
+            }
+            a:nth-child(2) {
+                display: block;
+                position: relative;
+                padding-right: 35px;
+                &::after {
+                    content: '';
+                    background-image: url(../images/icons/mail.png);
+                    background-position: center;
+                    background-size: contain;
+                    height: 36px;
+                    width: 26px;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    z-index: 10;
+                    top: 46px;
+                    right: 0px;
+                }
+            }
+            a:not(:first-child) {
+                font-size: 14px;
+            }
+        }
+        .agent-text {
+            padding-right: 500px;
+            font-size: 14px;
+            line-height: 21px;
+            align-items: center;
+            letter-spacing: 0.04em;
+            text-transform: capitalize;
+            margin-top: 25px;
+            @media(max-width: 1290px) {
+                padding-right: 400px;
+            }
+            @media(max-width: 1023px) {
+                padding-right: 0;
+                text-align: justify;
+            }
+        }
+        a {
+            margin-left: 895px;
+            color: $black !important;
+            text-decoration: none !important;
+            margin-top: -100px;
+        }
+        a[href^="/en/agent/indira-lausevic"], a[href^="/en/agent/maria-piault"],
+        a[href^="/uk/agent/indira-laushevich"], a[href^="/uk/agent/mariya-pyault"],
+        a[href^="/de/agent/indira-lausevic"], a[href^="/de/agent/maria-piault"],
+        a[href^="/fr/agent/indira-lausevic"], a[href^="/fr/agent/maria-piault"] {
+            margin-left: 0px;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 67px;
+            line-height: 100px;
+            color: $black !important;
+            text-decoration: none !important;
+            @media(max-width: 1023px) {
+                font-size: 50px;
+            }
+            @media(max-width: 767px) {
+                font-size: 40px;
+            }
+            @media(max-width: 470px) {
+                font-size: 25px;
+                line-height: 20px;
+            }
+        }
+        a[href^="/en/agent/elena-tkachuk"], a[href^="/en/agent/daniel-isaksson"],
+        a[href^="/de/agent/elena-tkachuk"], a[href^="/de/agent/daniel-isaksson"],
+        a[href^="/uk/agent/olena-tkachuk"], a[href^="/uk/agent/daniel-isaksson"],
+        a[href^="/fr/agent/elena-tkachuk"], a[href^="/fr/agent/daniel-isaksson"] {
+            margin-left: 0px;
+            margin-top: 75px;
+            font-weight: 500;
+            font-size: 67px;
+            line-height: 100px;
+            color: $black !important;
+            text-decoration: none !important;
+            @media(max-width: 1290px) {
+                margin-top: 0px;
+            }
+            @media(max-width: 1023px) {
+                font-size: 50px;
+            }
+            @media(max-width: 767px) {
+                font-size: 40px;
+            }
+            @media(max-width: 470px) {
+                font-size: 25px;
+                line-height: 20px;
+            }
+        }
+        a[href^="/de/agent/elena-tkachuk"],
+        a[href^="/fr/agent/elena-tkachuk"] {
+            margin-top: 30px;
+        }
+        a[href^="/en/agent/indira-lausevic"] {
+            margin-top: 15px;
+        }
+        a[href^="/de/agent/indira-lausevic"],
+        a[href^="/fr/agent/indira-lausevic"] {
+            margin-top: -25px;
+            @media (max-width: 470px) {
+                margin-top: 15px;
+            }
+        }
+        a[href^="/uk/agent/olena-tkachuk"], a[href^="/uk/agent/indira-laushevich"] {
+            @media (min-width: 1291px) {
+                margin-top: 20px;
+            }
+        }
+        a[href^="/uk/agent/indira-laushevich"] {
+            margin-top: 0px;
+        }
+        a[href^="/fr/agent/daniel-isaksson"] {
+            margin-top: 50px;
+            @media (max-width: 1023px) {
+                margin-top: 0px;
+            }
+        }
+        a[href^="tel:%2B33603049355"] {
+            display: block;
+            position: relative;
+            padding-top: 55px;
+            padding-right: 46px;
+            &::after {
+                content: '';
+                background-image: url(../images/icons/phone.png);
+                background-position: center;
+                background-size: contain;
+                height: 36px;
+                width: 26px;
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: 10;
+                top: 46px;
+                right: 0px;
+            }
+            @media(max-width: 1290px) {
+                margin-left: 590px;
+            }
+            @media(max-width: 1023px) {
+                margin-top: -35px;
+                margin-left: 396px;
+            }
+            @media(max-width: 767px) {
+                margin-left: 125px;
+            }
+            @media(max-width: 470px) {
+                margin-left: 45px;
+            }
+        }
+        a[href^="tel:%2B330645722225"], a[href^="tel:%2B33493768754"], a[href^="tel:%2B33612116233"] {
+            display: block;
+            position: relative;
+            padding-right: 46px;
+            margin-top: -25px;
+            &::after {
+                content: '';
+                background-image: url(../images/icons/phone.png);
+                background-position: center;
+                background-size: contain;
+                height: 36px;
+                width: 26px;
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: 10;
+                top: -7px;
+                right: 0px;
+            }
+            @media(max-width: 1290px) {
+                margin-left: 595px;
+            }
+            @media(max-width: 1023px) {
+                margin-top: 16px;
+                margin-left: 396px;
+            }
+            @media(max-width: 767px) {
+                margin-left: 125px;
+            }
+            @media(max-width: 470px) {
+                margin-left: 45px;
+            }
+        }
+        a[href^="tel:%2B330645722225"] {
+            &::after {
+                right: 4px;
+            }
+        }
+        a[href^="tel:%2B33612116233"] {
+            &::after {
+                right: -9px;
+            }
+        }
+        a[href^="mailto:indira@marks.fr"] {
+            display: block;
+            position: relative;
+            padding-right: 35px;
+            padding-top: 20px;
+            &::after {
+                content: '';
+                background-image: url(../images/icons/mail.png);
+                background-position: center;
+                background-size: contain;
+                height: 36px;
+                width: 26px;
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: 10;
+                top: 12px;
+                right: -4px;
+            }
+            @media(max-width: 1290px) {
+                margin-left: 590px;
+            }
+            @media(max-width: 1023px) {
+                margin-top: -25px;
+                margin-left: 396px;
+            }
+            @media(max-width: 767px) {
+                margin-top: -7px;
+                margin-left: 125px;
+            }
+            @media(max-width: 470px) {
+                margin-left: 45px;
+            }
+        }
+        a[href^="mailto:daniel@marks.fr"], a[href^="mailto:maria@marks.fr"], a[href^="mailto:elena@marks.fr"] {
+            display: block;
+            position: relative;
+            padding-right: 35px;
+            padding-top: 35px;
+            &::after {
+                content: '';
+                background-image: url(../images/icons/mail.png);
+                background-position: center;
+                background-size: contain;
+                height: 36px;
+                width: 26px;
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: 10;
+                top: 28px;
+                right: 0px;
+            }
+            @media(max-width: 1290px) {
+                margin-left: 595px;
+            }
+            @media(max-width: 1023px) {
+                margin-top: -25px;
+                margin-left: 396px;
+            }
+            @media(max-width: 767px) {
+                margin-left: 125px;
+            }
+            @media(max-width: 470px) {
+                margin-left: 45px;
+            }
+        }
+    }
+    .container-fluid {
+        overflow: hidden;
+    }
+}
+#block-companybanner {
+    img {
+        width: 100%;
+        margin-top: -26px;
+        max-height: 700px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}
+#block-views-block-agents-block-1-2 {
+    h2 {
+        @media(max-width: 1190px) {
+            margin-bottom: 30px;
+        }
+        @media(max-width: 768px) {
+            margin-bottom: 0px;
+        }
+        @media(max-width: 375px) {
+            font-size: 40px;
+        }
+    }
+}

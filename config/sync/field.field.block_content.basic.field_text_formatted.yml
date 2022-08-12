@@ -1,0 +1,21 @@
+uuid: b6298527-45dc-435f-adfd-47da4ed7079c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_text_formatted
+  module:
+    - text
+id: block_content.basic.field_text_formatted
+field_name: field_text_formatted
+entity_type: block_content
+bundle: basic
+label: 'Text formatted'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

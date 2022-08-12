@@ -1,0 +1,63 @@
+uuid: 3802a89e-b795-4f86-ad68-df84f72a35c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_event.event_type.availability_daily
+    - field.field.bat_event.availability_daily.event_bat_unit_reference
+    - field.field.bat_event.availability_daily.event_dates
+    - field.field.bat_event.availability_daily.event_series
+    - field.field.bat_event.availability_daily.event_state_reference
+    - field.field.bat_event.availability_daily.field_event_webform_submission
+  module:
+    - datetime_range
+    - user
+id: bat_event.availability_daily.default
+targetEntityType: bat_event
+bundle: availability_daily
+mode: default
+content:
+  event_bat_unit_reference:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  event_dates:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  event_series:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  event_state_reference:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  uid:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_event_webform_submission: true
+  langcode: true

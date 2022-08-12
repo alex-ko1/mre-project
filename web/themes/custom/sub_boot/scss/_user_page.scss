@@ -1,0 +1,181 @@
+.login-page, 
+.register-page, .reset-page{
+    .region-content{
+    max-width: 500px;
+    margin: 0 auto;
+    border: solid;
+    border-color: $navyblue-op-5;
+    padding: 20px;
+    margin-bottom: 35px;
+    background-image: url(../images/webform-letter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    .page-title{
+        position: relative;
+    }
+    .form-submit {
+        width: 100%;
+        background-color: $navyblue-op-5;
+        border: none;
+        &:hover{
+            color:  $white;
+            background: $black;
+            transition: all .4s ease;
+        }
+    }
+    }
+}
+.register-page{
+    .form-managed-file{
+        .form-file{
+            width: 125px;
+        }
+    }
+    .region-content{
+        max-width: 700px;
+        @media(max-width: 740px){
+    
+            .region-content{
+                max-width: 500px;
+            }
+        }   
+    }
+}
+@media(max-width: 540px){
+    .path-user{
+        .region-content{
+            max-width: 400px;
+        }
+    }
+}
+@media(max-width: 440px){
+    .path-user{
+        .region-content{
+            max-width: 300px;
+        }
+    }
+}
+.user-logged-in.path-user {
+    .region-content{
+        max-width: 1200px;
+        margin: 0 auto;
+        border: solid;
+        border-color: #e6e6e6;
+        padding: 15px;
+        margin-bottom: 35px;
+        background-image: url(../images/webform-letter.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        .page-title {
+            display: flex;
+            font-size: 30px;
+        }
+        .form-type-item {
+            display: flex;
+            font-size: 16px;
+            h4 {
+                padding-right: 3px;
+            }
+        }
+        .field--name-user-picture {
+            display: flex;
+            img {
+                width: auto;
+                height: 100px;
+                filter: drop-shadow(-10px 10px 0px  $whitesmoke);
+            }
+        }
+        .flag-following {
+            display: none;
+        }
+        h2 {
+            font-size: 35px;
+            text-align: center;
+        }
+        .logout-link {
+            justify-content: end;
+            right: 0;
+            a {
+            margin: 0px;                
+            }
+        }
+        @media (max-width:576px){
+            .pagination{
+                margin-bottom: 0;
+            }
+        }
+        @media (max-width:475px){
+            .pagination{
+                gap: 5px;
+            }
+        }
+    }
+}
+#block-logout { 
+    z-index: 10;
+}
+
+html[lang="fr"]{
+    .logout-link {
+        a {
+            width: 140px;
+        }
+    }
+}
+
+.admin-page {
+    .block-views-blockreservations-block-1 {
+        display: none;
+    }
+    @include pagination;
+}
+
+.path-bookmarks {
+    .region-content {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 10px;
+        margin-bottom: 100px;
+        .action-unflag:hover {
+            box-shadow: 2px 2px 4px $black;
+        }
+        @media(max-width: 670px){
+            .action-unflag{
+                padding: 5px;
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+        @media(max-width: 530px) {
+            .views-field-field-teaser-image {
+                display: none;
+            }
+        }
+        td {
+            vertical-align: middle;
+        }
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
+#block-views-block-all-reservations-block-1, #block-views-block-reservations-block-1 {
+    @media(max-width: 424px) {
+        h2 {
+            font-size: 1.5em;
+        }
+        table {
+            font-size: 0.9em;
+        }
+    }
+    @media(max-width: 350px) {
+        th {
+            display: none;
+        }
+        td.views-field-event-dates {
+            width: 40%;
+            padding-left: 0px;
+        }
+    }
+}

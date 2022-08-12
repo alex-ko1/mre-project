@@ -1,0 +1,15 @@
+sagenda_booking_calendar:
+  version: 2.8.0
+  js:
+    angular/runtime.js: {}
+    angular/polyfills.js: {}
+    angular/polyfills-es5.js: {}
+    angular/main.js: {}
+  css:
+    theme:
+      'angular/styles.css': {}
+      'assets/vendor/bootstrap/bootstrap.css': {}
+      'angular/scroll.css': {}
+  dependencies:
+    - core/jquery
+    - core/drupal

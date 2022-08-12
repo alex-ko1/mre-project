@@ -1,0 +1,21 @@
+uuid: 528eb6d8-b629-4ea3-b4a6-c638f81d1891
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telephone
+    - node.type.agent
+  module:
+    - telephone
+id: node.agent.field_telephone
+field_name: field_telephone
+entity_type: node
+bundle: agent
+label: Telephone
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

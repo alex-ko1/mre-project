@@ -1,0 +1,18 @@
+uuid: fd42591b-97ac-4191-b3a2-c169b0e1879a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.top_header
+id: block_content.top_header.info
+field_name: info
+entity_type: block_content
+bundle: top_header
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,40 @@
+uuid: f69e6269-51c7-4d0b-8434-15e729079855
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:34e80af7-9666-4160-baa8-300e06de8073'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - sub_boot
+id: logout
+theme: sub_boot
+region: content
+weight: -40
+provider: null
+plugin: 'block_content:34e80af7-9666-4160-baa8-300e06de8073'
+settings:
+  id: 'block_content:34e80af7-9666-4160-baa8-300e06de8073'
+  label: Logout
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

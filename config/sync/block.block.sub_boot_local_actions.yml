@@ -1,0 +1,34 @@
+uuid: 1ee8544d-e278-4bfa-90de-1e721de14996
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - sub_boot
+_core:
+  default_config_hash: 0Evho0DNtV67EjfTZWEmokivgLSxQ3ZeW92SzTFejK8
+id: sub_boot_local_actions
+theme: sub_boot
+region: content
+weight: -38
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/properties/rent/*\r\n/properties/orenda/*\r\n/properties/miete/*\r\n/properties/location/*"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

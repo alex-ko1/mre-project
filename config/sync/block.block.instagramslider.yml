@@ -1,0 +1,30 @@
+uuid: 6623dc57-6ccb-406f-8a29-06c914996975
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1bae8563-ae71-4a25-8c74-4efaed8a7c83'
+  module:
+    - block_content
+    - system
+  theme:
+    - sub_boot
+id: instagramslider
+theme: sub_boot
+region: instagram
+weight: -37
+provider: null
+plugin: 'block_content:1bae8563-ae71-4a25-8c74-4efaed8a7c83'
+settings:
+  id: 'block_content:1bae8563-ae71-4a25-8c74-4efaed8a7c83'
+  label: instagram-slider
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /services

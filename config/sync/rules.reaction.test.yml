@@ -1,0 +1,74 @@
+uuid: da03002b-b7b7-4c77-9910-7a19dabc71ac
+langcode: en
+status: true
+dependencies: {  }
+id: test
+label: Test
+events:
+  -
+    event_name: 'rules_entity_insert:bat_event--availability_daily'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: f674703b-4bc3-4022-ac87-8f85c1c0ca6b
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 2a67b81d-c72d-4713-aa5b-2f49e1c333d2
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: b69c5a4b-956b-4673-a207-df407684b76a
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 845dd087-777b-4b56-b76a-522b7a159ab8
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - mreproject.v3@gmail.com
+          subject: 'New reservation is created!'
+          message: 'Check MRE profile for details. User info:  {{bat_event.uid.entity.mail.value}} / {{bat_event.uid.entity.name.value}}'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: 2ef2a8af-289a-4ddf-a098-89991c2b297d
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{bat_event.uid.entity.mail.value}}'
+          subject: 'Reservation is successfully created! Visit your MRE profile for details.'
+          message: 'Your MRE profile: https://mreproject.dev.drudesk.com/en/user/login. In order to cancel reservation contact the administrator.'
+          reply: ''
+        context_mapping:
+          language: '@language.current_language_context:language_interface'
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+        provides_mapping: {  }

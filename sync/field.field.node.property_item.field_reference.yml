@@ -1,0 +1,23 @@
+uuid: 98b307ec-af78-420d-9208-79343abb6dd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reference
+    - node.type.property_item
+id: node.property_item.field_reference
+field_name: field_reference
+entity_type: node
+bundle: property_item
+label: Reference
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

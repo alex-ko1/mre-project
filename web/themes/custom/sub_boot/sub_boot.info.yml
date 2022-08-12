@@ -1,0 +1,25 @@
+name: sub_boot
+type: theme
+description: 'sub_boot subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^8.9 || ^9'
+'base theme': bootstrap5
+libraries:
+  - sub_boot/global-styling
+stylesheets-remove:
+  - '@bootstrap5/css/style.css'
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  banner: 'Banner region'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  instagram: 'Instagram region'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  left_footer: 'Left footer'
+  right_footer: 'Right footer'
+  footer_menus: 'Footer menus'
+  footer: Footer
+

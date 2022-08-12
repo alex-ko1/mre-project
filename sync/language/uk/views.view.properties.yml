@@ -1,0 +1,18 @@
+display:
+  default:
+    display_options:
+      title: Майно
+      fields:
+        field_beds:
+          label: Ліжка
+        field_baths:
+          label: Ванни
+        field_reference:
+          label: Посилання
+      filters:
+        field_beds_value:
+          group_info:
+            description: ''
+        langcode:
+          expose:
+            description: ''

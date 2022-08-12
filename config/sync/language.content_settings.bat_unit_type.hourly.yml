@@ -1,0 +1,11 @@
+uuid: 06096969-e174-4474-afd2-483f0cacf17f
+langcode: en
+status: true
+dependencies:
+  config:
+    - bat_unit.type_bundle.hourly
+id: bat_unit_type.hourly
+target_entity_type_id: bat_unit_type
+target_bundle: hourly
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,46 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Anwenden
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sortieren nach'
+          sort_asc_label: Aufsteigend
+          sort_desc_label: Absteigend
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elemente pro Seite'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Versatz
+          tags:
+            previous: '‹ Vorherige Seite'
+            next: 'Nächste Seite ›'
+            first: '« Anfang'
+            last: 'Ende »'
+      fields:
+        id:
+          label: ID
+          separator: ', '
+        event_dates:
+          label: Termine
+          settings:
+            separator: '-'
+          separator: ', '
+      filters:
+        event_dates_value:
+          group_info:
+            group_items:
+              1:
+                title: 'Anstehende Termine'
+              2:
+                title: 'Vergangene Veranstaltungen'
+      title: Veranstaltungen
+      arguments:
+        id:
+          exception:
+            title: Alle
+  events:
+    display_title: Block

@@ -1,0 +1,11 @@
+label: Місцевості
+display:
+  default:
+    display_options:
+      title: Місцевості
+      use_more_text: 'Читати далі'
+      header:
+        area:
+          content:
+            value: "<p>Знаменита Французька Рив'єра, що лежить між Альпами.</p>\r\n"
+            format: basic_html

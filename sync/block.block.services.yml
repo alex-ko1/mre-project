@@ -1,0 +1,30 @@
+uuid: bda4a47a-d4b6-4313-a8f4-64843a4b653e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a37d5ee1-7099-4347-88b1-ade27d072c75'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap5
+id: services
+theme: bootstrap5
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:a37d5ee1-7099-4347-88b1-ade27d072c75'
+settings:
+  id: 'block_content:a37d5ee1-7099-4347-88b1-ade27d072c75'
+  label: Services
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

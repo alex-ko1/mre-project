@@ -1,0 +1,18 @@
+uuid: 15d3a88c-04f2-460d-bf8c-542fa9327b14
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.error_page
+id: node.error_page.title
+field_name: title
+entity_type: node
+bundle: error_page
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

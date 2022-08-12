@@ -1,0 +1,24 @@
+uuid: edd7077d-c0a7-4aaa-9dc6-50317dd74f30
+langcode: en
+status: true
+dependencies: {  }
+id: component
+label: Component
+description: ''
+tags: {  }
+config_version: '3'
+component:
+  expression:
+    id: rules_rule
+    uuid: 081fe94a-fd12-43ac-8450-0420a94d9063
+    weight: 0
+    conditions:
+      id: rules_and
+      uuid: 0ac25e8e-716d-4fb6-802b-f60bf895bb04
+      weight: 0
+      conditions: {  }
+    actions:
+      id: rules_action_set
+      uuid: be454a1f-562e-4986-90bd-627c7bac9e4b
+      weight: 0
+      actions: {  }

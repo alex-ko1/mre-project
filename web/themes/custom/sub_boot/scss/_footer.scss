@@ -1,0 +1,290 @@
+footer {
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    line-height: 19px;
+    background: $black;
+    z-index: 2;
+    padding-bottom: 0;
+    .footer-wrapper {
+        @include center;
+        display: flex;
+        color:  $white;
+        margin-bottom: 2em;
+        a{
+            color:  $white;
+            text-decoration: none;
+        }
+        .footer__left {
+            font-weight: 400;
+            font-size: 14px;
+            border-right: 3px solid $darkgray;
+            padding-right: 1.5em;
+            height: max-content;
+            .region-left-footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 2.5em;
+            }
+            #block-leftfooter {
+                &>div{
+                    margin-bottom: 1.5em;
+                    .field--name-field-address {
+                        width: 58%;
+                    }
+                    a:hover {
+                        opacity: .7;
+                    }
+                }
+            }
+            .social-media-links--platforms {
+                li {
+                    margin-right: 5px;
+                    width: auto;
+                    height: auto;
+                    padding: 0;
+                    span {
+                        width: 40px;
+                        height: 40px;
+                        padding-top: 10px;
+                    }
+                    a {
+                        color: $black;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .field--name-field-work-schedule {
+                position: relative;
+                padding-left: 5px;
+                &::before {
+                    content: "";
+                    background: url(../icons/clock.svg) no-repeat;
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background-size: 14px;
+                    left: -16px;
+                    pointer-events: none;
+                    margin-top: 2px;
+                }
+                a {
+                    margin-left: 6px;
+                }
+            }
+            .field--name-field-email {
+                position: relative;
+                &::before {
+                    content: "";
+                    background: url(../icons/email.svg) no-repeat;
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background-size: 14px;
+                    left: -16px;
+                    pointer-events: none;
+                    margin-top: 5px;
+                }
+                a {
+                    margin-left: 6px;
+                }
+            }
+        }
+        .footer__right {
+            padding-left: 3em;
+            .webform-submission-footer-form-form {
+                position: relative;
+                .form-item-sign-up-to-our-newsletter {
+                    label {
+                    font-family: 'Playfair Display';
+                    font-style: normal;
+                    font-size: 1.75em;
+                    margin-bottom: 1em;
+                    max-height: 21px;
+                    line-height: 26px;
+                    margin-top: -4px;
+                    @media (max-width: 389px) {
+                        margin-top: -11px;
+                    }
+                    }
+                    #edit-sign-up-to-our-newsletter {
+                        border-radius: 0px;
+                        background:  $whitesmoke;
+                    }
+                }
+                .form-actions {
+                    position: absolute;
+                    right: 0;
+                    top: 39px;
+                    input {
+                        font-size: 0;
+                        border-width: 0;
+                        background-color: transparent;
+                        font-size: 0;
+                        color: transparent;
+                        position: relative;
+                        z-index: 1;
+                        margin-right: 40px;
+                        padding-top: 16px;
+                    }
+                    &::after {
+                        content: '';
+                        background-image: url(../icons/submit-email.svg);
+                        width: 19px;
+                        height: 19px;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        animation: pulse 3s linear alternate infinite;
+                        right: 43px;
+                        @media (max-width: 498px) {
+                            right: 20px;
+                        }
+                    }
+                }
+                .form-type-checkbox {
+                    font-size: 11px;
+                }
+            }
+            .region-footer-menus {
+                display: flex;
+                gap: 1.5em;
+                h5 {
+                    font-size: 13px;
+                    margin-bottom: 0 !important;
+                }
+                .navbar-nav .nav-item a {
+                    font-size: 11px;
+                    padding: 5px;
+                    &:hover {
+                        color: $whitesmoke;
+                        transform: translate3d(2px,0,0);
+                        opacity: .7;
+                    }
+                }
+                @media (max-width: 1199px) {
+                    flex-wrap: wrap;
+                }
+                @media (max-width: 1024px) {
+                    gap: 0.5em;
+                }
+                @media (max-width: 960px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+                    & > nav {
+                        width: 40%;
+                    }
+                    .navbar-nav .nav-item a {
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;  
+            .footer__left {
+                text-align: center;
+                border-width: 0;
+                padding-right: 0;
+                margin-bottom: 1em;
+                .navbar-brand,
+                .social-media-links--platforms {
+                    justify-content: center;
+                }
+                .navbar-brand {
+                    margin: 0;
+                }
+                .region-left-footer {
+                    gap: 1em;
+                }
+                .field--name-field-work-schedule,
+                .field--name-field-email,
+                .field--name-field-address,
+                .field--name-field-telephone {
+                    &::before {
+                        left: auto;
+                    }
+                    a {
+                        margin-left: 20px;
+                    }
+                }
+                .field--name-field-work-schedule {
+                    display: inline-block;
+                    &::before {
+                        margin-left: -18px;
+                    }
+                }
+            }
+            .footer__right {
+                padding-left: 0;
+                .region-footer-menus {
+                    gap: 1em;
+                    nav {
+                        width: auto;
+                    }
+                }
+            }
+        }
+        @media (max-width: 604px) {
+            .footer__right .region-footer-menus {
+                nav {
+                    width: 40%;
+                }
+            }
+        }
+        @media (max-width: 604px) {
+            .footer__right .region-footer-menus {
+                flex-direction: column;
+                nav {
+                    width: auto;
+                }
+            }
+        }
+        @media (max-width: 468px) {
+            .footer__right {
+                .webform-submission-footer-form-form {
+                    .form-item-sign-up-to-our-newsletter {
+                        label {
+                            font-size: 1.1em;
+                        }
+                    }
+                    .form-actions {
+                        top: 30px;
+                    } 
+                }
+            }
+        }
+    }
+    &>.container-fluid {
+        background-color: $darkgray;
+        color: $gray;
+        #block-bottomfooter {
+            @include center;
+            display: flex;
+            gap: 1.5em;
+            padding: 1em 0;
+            a {
+                color: $gray;
+                text-decoration: none;
+                &:hover {
+                    color: $silver;
+                }
+            }
+            .field--name-field-text-formatted {
+                width: 70%;
+            }
+        }
+        @media (max-width: 568px) {
+            #block-bottomfooter {
+                flex-direction: column-reverse;
+                text-align: center;
+                .field--name-field-text-formatted {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

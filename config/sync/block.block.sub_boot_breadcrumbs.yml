@@ -1,0 +1,22 @@
+uuid: c62fc110-d558-4956-84b4-1a5fa0837211
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sub_boot
+_core:
+  default_config_hash: NNexckE8srd7TYAVj1PDPJz77xplCT1RIL7blitiask
+id: sub_boot_breadcrumbs
+theme: sub_boot
+region: breadcrumb
+weight: -24
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

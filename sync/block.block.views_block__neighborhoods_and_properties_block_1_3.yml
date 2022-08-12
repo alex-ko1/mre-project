@@ -1,0 +1,29 @@
+uuid: 04354846-8bc5-4225-9296-efa1c281baa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.neighborhoods_and_properties
+  module:
+    - system
+    - views
+  theme:
+    - sub_boot
+id: views_block__neighborhoods_and_properties_block_1_3
+theme: sub_boot
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:neighborhoods_and_properties-block_1'
+settings:
+  id: 'views_block:neighborhoods_and_properties-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /neighborhoods

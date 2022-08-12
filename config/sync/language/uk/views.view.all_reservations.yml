@@ -1,0 +1,16 @@
+display:
+  default:
+    display_options:
+      title: 'Усі бронювання'
+      fields:
+        event_bat_unit_reference:
+          label: 'Об''єкт'
+        event_dates:
+          label: Дати
+      pager:
+        options:
+          tags:
+            next: 'Вперед ›'
+            previous: '‹ Назад'
+            first: '« '
+            last: »

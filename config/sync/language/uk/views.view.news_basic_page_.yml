@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      fields:
+        view_node:
+          text: Більше
+      use_more_text: 'Всі новини'
+      title: 'Новини та статті'

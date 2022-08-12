@@ -1,0 +1,34 @@
+uuid: bbd5bc3b-e0a8-424a-9d8a-d16c419486e2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7ace7ad6-8a64-4390-a6e2-aaec1c693989'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - sub_boot
+third_party_settings:
+  block_class:
+    classes: 'wow  fadeInLeftBig'
+id: servicesblock
+theme: sub_boot
+region: content
+weight: -34
+provider: null
+plugin: 'block_content:7ace7ad6-8a64-4390-a6e2-aaec1c693989'
+settings:
+  id: 'block_content:7ace7ad6-8a64-4390-a6e2-aaec1c693989'
+  label: 'Services Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''
